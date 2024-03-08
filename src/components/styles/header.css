@@ -14,13 +14,11 @@
 }
 
 .button {
-
 	display: flex;
 	font-size: 1.5rem;
 	min-width: 8%;
 	align-items: center;
 	justify-content: center;
-	margin: 0 2rem;
 	padding: 1rem;
 }
 
@@ -31,16 +29,15 @@
 
 @media (min-width: 768px) {
 	.container {
-		display: flex;
 		flex-direction: row;
 		justify-content: flex-end;
-		color: #fff;
-		background-color: var(--tecnm-dark-blue);
 	}
 	
 	.title {
 		margin-right: auto;
-		font-size: 4rem;
-		padding: 1rem;
+	}
+
+	.button {
+		margin: 0 2rem;
 	}
 }
