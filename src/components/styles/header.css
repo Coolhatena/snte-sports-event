@@ -1,14 +1,14 @@
 
 .container {
 	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	color: #fff;
+	flex-direction: column;
 	background-color: var(--tecnm-dark-blue);
+	justify-content: center;
+	color: #fff;
 }
 
 .title {
-	margin-right: auto;
+	text-align: center;
 	font-size: 4rem;
 	padding: 1rem;
 }
@@ -24,7 +24,23 @@
 	padding: 1rem;
 }
 
-.button:hover {
+.button:hover, .button:active {
 	background-color: #305eaa;
 	cursor: pointer;
+}
+
+@media (min-width: 768px) {
+	.container {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		color: #fff;
+		background-color: var(--tecnm-dark-blue);
+	}
+	
+	.title {
+		margin-right: auto;
+		font-size: 4rem;
+		padding: 1rem;
+	}
 }
