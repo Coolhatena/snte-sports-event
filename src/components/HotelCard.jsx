@@ -3,7 +3,7 @@ import './styles/HotelCard.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot, faPhone, faGlobe } from '@fortawesome/free-solid-svg-icons'
 
-// TODO: ADD ICONS FOR THE WEBSITE, LOCATIONS AND PHONE SECTIONS
+// TODO: ENHANCE STYLES FOR THIS COMPONENT
 const HotelCard = ({title, image, web, location, phone_number, description}) => {
   return (
 	<div className='card-container'>
