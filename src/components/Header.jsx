@@ -35,6 +35,7 @@ const Header = () => {
 		
 		<section className='options'>
 			<div className='linksContainer'>
+				<Link href='#' className='button'>Home</Link>
 				<Link href='#' className='button'>Convocatoria</Link>
 				<Link href='#' className='button'>Reglamento Deportivo</Link>
 				<Link href='/hotels' className='button'>Hoteles</Link>
