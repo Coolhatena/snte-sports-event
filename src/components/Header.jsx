@@ -6,6 +6,7 @@ import Link from 'next/link'
 
 const Header = () => {
   return (
+
 	<nav className='bg-blueIte'>
 		<div className='container'>
 			<a href='https://snte.org.mx' className="flex items-center space-x-3 rtl:space-x-reverse">
