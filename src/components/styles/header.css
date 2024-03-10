@@ -20,6 +20,8 @@
 	align-items: center;
 	justify-content: center;
 	padding: 1rem;
+	color: white;
+	text-decoration: none;
 }
 
 .button:hover, .button:active {

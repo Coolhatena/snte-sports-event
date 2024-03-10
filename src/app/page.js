@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main>
-    	<Header />
+		<p>MAIN</p>
 		{/* <HotelCard 
 			title={'Villa Marina'}
 			image={'villamarina.webp'}
