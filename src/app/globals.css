@@ -1,6 +1,10 @@
 
 :root {
-	--tecnm-dark-blue: #1B396A;
+	--white:			#FFFFFF;
+	--lightOrange:		#F98125;
+	--darkOrange:		#FF6700;
+	--darkBlue:			#11224D;
+	--tecnm-dark-blue:	#1B396A;
 }
 
 * {
