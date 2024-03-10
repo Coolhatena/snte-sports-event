@@ -26,7 +26,11 @@ const HotelCard = ({title, image, web, location, phone_number, description}) => 
 				<FontAwesomeIcon icon={faPhone} className='card-icon'/>
 				<p className='card-phone'>{phone_number}</p>
 			</div>
-			<p className='card-description'>{description}</p>
+
+			<div className='card-description-container'>
+				<p className='card-description-title'>Descripcion:</p>
+				<p className='card-description'>{description}</p>
+			</div>
 		</div>
 	</div>
   )
