@@ -84,6 +84,7 @@
     /* Ajustes para dispositivos móviles */
     .texto-principal {
       font-size: 1.4rem;
+	  max-width: 80%;
     }
   
     .titulo {
@@ -95,7 +96,7 @@
     }
   
     .imagen-principal {
-      max-width: 20%;
+      max-width: 100%;
     }
   }
   
