@@ -1,30 +1,31 @@
 /* Estilo base */
 .texto-principal {
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #333;
     line-height: 1.5;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 60%;
     padding-top: 4rem;
+	overflow-wrap: break-word;
   }
   
   /* Títulos */
   .titulo {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
   }
   
   .subtitulo {
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 0.5rem;
   }
   
   /* Párrafos */
   .parrafo {
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
   }
   
   /* Enlaces */
@@ -52,7 +53,7 @@
   
   /* Secciones */
   .seccion-principal {
-    padding: 20px;
+    padding: 2rem;
   }
   
   .seccion-secundaria {
@@ -82,19 +83,20 @@
   @media (max-width: 768px) {
     /* Ajustes para dispositivos móviles */
     .texto-principal {
-      font-size: 14px;
+      font-size: 1.4rem;
+	  max-width: 80%;
     }
   
     .titulo {
-      font-size: 20px;
+      font-size: 2rem;
     }
   
     .subtitulo {
-      font-size: 18px;
+      font-size: 1.8rem;
     }
   
     .imagen-principal {
-      max-width: 80%;
+      max-width: 100%;
     }
   }
   

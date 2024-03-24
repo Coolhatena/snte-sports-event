@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import Contact from '@/app/contact/page'
 
 import './styles/main.css'
 const Main = () => {
