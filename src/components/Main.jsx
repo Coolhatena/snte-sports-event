@@ -21,8 +21,6 @@ const Main = () => {
           <a className="enlace" href="https://sites.google.com/Itlp.edu.mx/prenacionaldeportivolapaz2023">https://sites.google.com/Itlp.edu.mx/prenacionaldeportivolapaz2023</a>
         </p>
       </div>
-
-      <Contact/>
     </div>
     
   )
