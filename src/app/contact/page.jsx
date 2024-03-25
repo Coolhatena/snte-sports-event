@@ -4,10 +4,12 @@ import './page.css'
 const Contact = () => {
   return (
 	<div className='contact-container'>
-        <div className='flex flex-col'>
-            <h1>Contact Us</h1>
-            <p>Puedes contactarnos en la siguiente direccion:</p>
-
+        <div className='flex'>
+            <div className='header'>
+                <h1>Contact Us</h1>
+                <p>Puedes contactarnos en la siguiente direccion:</p>
+            </div>
+           
             <div className='grid-container'>
                 <div className='item'>
                     <div className='icon'>
