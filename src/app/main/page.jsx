@@ -41,7 +41,6 @@ const Main = () => {
 		</div>
 
     <Contact/>
-    
 	</div>
   )
 }
