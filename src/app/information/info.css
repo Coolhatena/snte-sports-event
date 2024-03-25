@@ -1,4 +1,4 @@
-.contact-container {
+.info-container {
     margin: 5rem;
     display: flex;
     border-color: var(--tecnm-dark-blue);
@@ -11,7 +11,7 @@
 .grid-info {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Esto crea 3 columnas de igual ancho */
-    gap: 4rem; /* Espacio entre las cajas */
+    gap: 2.5rem; /* Espacio entre las cajas */
     justify-content: center;
 }
 
@@ -25,11 +25,22 @@
 
 .item-img {
     display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
+    justify-content: right; /* Centrar horizontalmente */
+    align-items: right; /* Centrar verticalmente */
 }
 
 .info {
     margin-top: 1.5rem;
     text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-info {
+        grid-template-columns: repeat(2, 1fr); /* Cambiar a 3 columnas en dispositivos con ancho máximo de 768px */
+    }
+
+    .iframe-container {
+        grid-column: 1 / span 3; /* Ocupa las 3 columnas en lugar de las últimas 3 */
+        margin-top: 1.5rem; /* Espacio entre grid-container e iframe-container */
+    }
 }

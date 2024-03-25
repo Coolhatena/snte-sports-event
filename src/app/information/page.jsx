@@ -4,7 +4,7 @@ import './info.css'
 
 const Information = () => {
   return (
-    <div className='contact-container'>
+    <div className='info-container'>
         <div className='grid-info'>
             <div className='item-info'>
                 <h1>IX Evento Nacional Cultural y Deportivo Zona Norte Pacifico</h1>
