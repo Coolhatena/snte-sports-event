@@ -1,0 +1,35 @@
+.contact-container {
+    margin: 5rem;
+    display: flex;
+    border-color: var(--tecnm-dark-blue);
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.grid-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Esto crea 3 columnas de igual ancho */
+    gap: 4rem; /* Espacio entre las cajas */
+    justify-content: center;
+}
+
+.item-info {
+    margin-top: 1rem;
+    text-align: justify;
+    position: relative;
+    grid-column: span 2; /* Ocupa 2 columnas */
+    justify-content: center;
+}
+
+.item-img {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.info {
+    margin-top: 1.5rem;
+    text-align: justify;
+}

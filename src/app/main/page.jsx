@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Contact from '@/app/contact/page'
+import Information from '../information/page'
 
 import './main.css'
 const Main = () => {
@@ -40,6 +41,7 @@ const Main = () => {
 				<a className="enlace" href="https://sites.google.com/Itlp.edu.mx/prenacionaldeportivolapaz2023">https://sites.google.com/Itlp.edu.mx/prenacionaldeportivolapaz2023</a>
 		</div>
 
+    <Information/>
     <Contact/>
 	</div>
   )
