@@ -1,5 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
+import Contact from '@/app/contact/page'
+
 import './main.css'
 const Main = () => {
   return (
@@ -15,16 +17,16 @@ const Main = () => {
 		
 		<div className="texto-principal">
 
-		<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-    <Image
-        src={'/img/logo_evento.jpeg'}
-        alt="Logo evento"
-        layout='responsive'
-        objectFit='contain'
-        width={200}
-        height={100}
-    />
-</div>
+		  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <Image
+            src={'/img/logo_evento.jpeg'}
+            alt="Logo evento"
+            layout='responsive'
+            objectFit='contain'
+            width={200}
+            height={100}
+        />
+      </div>
 			
 			<h1 className="titulo">IX   EVENTO NACIONAL CULTURAL Y DEPORTIVO ZONA NORTE PACÍFICO DEL 25 AL 30 DE JUNIO DE 2023</h1>
 			<h2 className="subtitulo">10 al 14 de julio - La Paz, Baja California Sur</h2>
@@ -37,6 +39,9 @@ const Main = () => {
 			<p className="parrafo"> Para más información sobre el Prenacional Deportivo La Paz 2023, puedes visitar la página web oficial: </p>
 				<a className="enlace" href="https://sites.google.com/Itlp.edu.mx/prenacionaldeportivolapaz2023">https://sites.google.com/Itlp.edu.mx/prenacionaldeportivolapaz2023</a>
 		</div>
+
+    <Contact/>
+    
 	</div>
   )
 }
