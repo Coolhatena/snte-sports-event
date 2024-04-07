@@ -8,7 +8,7 @@ const Contact = () => {
 	<div className='contact-container'>
         <div className='flex'>
             <div className='header'>
-                <h1>Contact Us</h1>
+                <h1>Contáctanos</h1>
                 <p>El Instituto Tecnologico de Ensenada te puede atender en:</p>
             </div>
            
@@ -30,8 +30,8 @@ const Contact = () => {
                         </svg>
                     </div>
                     <h2>Horario</h2>
-                    <p>Mon-Fri: 8am-9pm</p>
-                    <p>Sat: 8am-6pm</p>
+                    <p>Lun-Vie: 8am-9pm</p>
+                    <p>Sab: 8am-6pm</p>
                 </div>
 
                 <div className='item'>
