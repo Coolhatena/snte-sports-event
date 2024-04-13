@@ -1,5 +1,5 @@
 import React from 'react'
-import HotelCard from '@/components/HotelCard'
+import HotelCard from '@/components/hotelCard/HotelCard.jsx'
 
 import './page.css'
 

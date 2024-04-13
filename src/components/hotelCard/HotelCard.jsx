@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles/HotelCard.css'
+import './hotelCard.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot, faPhone, faGlobe } from '@fortawesome/free-solid-svg-icons'
 

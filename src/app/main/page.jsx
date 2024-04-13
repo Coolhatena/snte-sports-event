@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
-import Contact from '@/app/contact/page'
-import Information from '../information/page'
-import Gallery from '../gallery/page'
+import Contact from '@/components/contact/page.jsx'
+import Information from '@/components/information/page.jsx'
+import Gallery from '@/components/gallery/page.jsx'
 
 import './main.css'
 const Main = () => {
