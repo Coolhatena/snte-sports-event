@@ -48,13 +48,20 @@
 
 .button {
 	display: flex;
-	font-size: 1.5rem;
-	min-width: 8%;
-	padding: 1rem;
+	justify-content: center;
+	align-items: center;
 	margin: 1rem;
+	padding: 1rem;
+	font-size: 1.5rem;
 	color: white;
 	font-weight: 600;
 	text-decoration: none;
+}
+
+.button p {
+	text-align: center;
+	height: fit-content;
+	width: fit-content;
 }
 
 .button:hover, .button:active {
