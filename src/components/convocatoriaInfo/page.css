@@ -1,0 +1,56 @@
+.convocatoria-container {
+    margin: 5rem;
+    /*display: flex;*/
+    border-color: var(--tecnm-dark-blue);
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+  
+  .titulo-convocatoria {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitulo-convocatoria {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .titulo-evento {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .zona {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .subtitulo-bases {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .lista-bases {
+    font-size: 1.1rem;
+    margin-left: 2rem;
+  }
+  
+  .lista-bases li {
+    margin-bottom: 1rem;
+  }
+  
+  .lista-bases li ul {
+    margin-left: 2rem;
+  }
+  
+  .lista-bases li ul li {
+    margin-bottom: 0.5rem;
+  }
+  
