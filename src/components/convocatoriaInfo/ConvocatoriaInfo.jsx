@@ -1,14 +1,46 @@
 import React from 'react'
+import Image from 'next/image';
+import ItemList from '../items/ItemList';
 import './page.css'
 
 const ConvocatoriaInfo = () => {
     return (
+      <div>
+        <div className='container-img'>
+            <div className='capa'></div>
+            <Image
+              src={'/img/img06.jpg'}
+              alt="SNTE seccion 2"
+              width={500}
+              height={500}
+            />
+            <h1 >Convocatoria</h1>
+            <p className='subtitulo-convocatoria'>“X Evento Nacional Cultural y Deportivo de la Sección 61 del SNTE”</p>
+        </div>
+
         <div className='convocatoria-container'>
-          <h1 >Convocatoria</h1>
-          <p className='subtitulo-convocatoria'>A los equipos representativos de las Delegaciones Sindicales de los Institutos Tecnológicos y Centros de: Mazatlán, Culiacán, Los Mochis, Huatabampo, Guaymas, Hermosillo, Valle del Yaqui, Nogales, Agua Prieta, Mexicali, Tijuana, Ensenada y La Paz B.C. a participar en el</p>
+          <p>A los equipos representativos de las Delegaciones Sindicales de los Institutos Tecnológicos y Centros de: Mazatlán, Culiacán, Los Mochis, Huatabampo, Guaymas, Hermosillo, Valle del Yaqui, Nogales, Agua Prieta, Mexicali, Tijuana, Ensenada y La Paz B.C. a participar en el</p>
           <h3 className='titulo-evento'>“X Evento Nacional Cultural y Deportivo de la Sección 61 del SNTE”</h3>
           <p className='zona'>Zona Norte Pacífico</p>
           
+          
+          <h2 className="title">Delegaciones Participantes</h2>
+          <div className='list'>
+              <ItemList delegacion={'Mazatlán'}></ItemList>
+              <ItemList delegacion={'Culiacán'}></ItemList>
+              <ItemList delegacion={'Los Mochis'}></ItemList>
+              <ItemList delegacion={'Huatabampo'}></ItemList>
+              <ItemList delegacion={'Guaymas'}></ItemList>
+              <ItemList delegacion={'Hermosillo'}></ItemList>
+              <ItemList delegacion={'Valle del Yaqui'}></ItemList>
+              <ItemList delegacion={'Nogales'}></ItemList>
+              <ItemList delegacion={'Agua Prieta'}></ItemList>
+              <ItemList delegacion={'Mexicali'}></ItemList>
+              <ItemList delegacion={'Tijuana'}></ItemList>
+              <ItemList delegacion={'Ensenada'}></ItemList>
+              <ItemList delegacion={'La Paz, B.C'}></ItemList>
+          </div>
+
           <h4 className='subtitulo-bases'>B A S E S</h4>
           
           <ol className='lista-bases'>
@@ -82,6 +114,7 @@ se constituye para dirimir las protestas de los equipos participantes en los tor
             <li>Lo no previsto en la presente convocatoria, será resuelto por el Comité Organizador.</li>
           </ol>
         </div>
+      </div>
       );
 }
 
