@@ -1,19 +1,31 @@
 .item {
     display: flex;
-    align-content: center;
+    align-items: center;
+    margin: 1rem;
+    justify-content: left;
+    text-align: center;
+    padding-left: 2rem;
 }
   
-.text {
-  margin: 0;
-  text-align: center;
-  flex: 1;
+.item p {
+  text-align: left;
   display: flex;
-  align-items: center;
+  align-items: left;
 }
   
 .icon {
   height: 1.7rem;
   width: 1.7rem;
-  margin: 1rem 1rem 1rem 0;
+  text-align: center;
   color: var(--tecnm-dark-blue);
+}
+
+@media screen and (max-width: 768px) {
+  .icon {
+    height: 1.7rem;
+    width: 1.7rem;
+    text-align: center;
+    margin: 1.2rem 1rem 1rem 3rem;
+    color: var(--tecnm-dark-blue);
+  }
 }
