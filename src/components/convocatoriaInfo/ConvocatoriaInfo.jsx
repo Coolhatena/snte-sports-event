@@ -9,7 +9,7 @@ const ConvocatoriaInfo = () => {
         <div className='container-img'>
             <div className='capa'></div>
             <Image
-              src={'/img/img06.jpg'}
+              src={'/img/n-img06.png'}
               alt="SNTE seccion 2"
               width={500}
               height={500}
