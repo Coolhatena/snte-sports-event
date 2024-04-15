@@ -1,3 +1,6 @@
+li{
+  font-size: 1.3rem;
+}
 .convocatoria-container {
     margin: 3rem;
     /*display: flex;*/
@@ -6,7 +9,8 @@
     text-align: justify;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1.2  rem;
+    margin: 6rem;
 }
   
 .title {
@@ -87,7 +91,7 @@
   }
   
   .subtitulo-bases {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     font-weight: bold;
     margin-bottom: 1rem;
   }
