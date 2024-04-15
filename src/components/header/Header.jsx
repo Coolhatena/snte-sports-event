@@ -39,7 +39,7 @@ const Header = () => {
 				<Link href='https://drive.google.com/file/d/1Ke3fukty1_pO-tuOBln4_P6ZKOy9PQzl/view?usp=sharing' className='button'><p>Reglamento Deportivo</p></Link>
 				<Link href='https://docs.google.com/forms/d/e/1FAIpQLScIXNpgvX6zvjTvn6ZdP02WpcVy8IU6GFZ_hGIgVZXSHFD7PQ/viewform?usp=sf_link' 
 				className='button'><p>Pre-Registro</p></Link>
-				<Link href='#' className='button'><p>Registro</p></Link>
+				<Link href='/registration' className='button'><p>Registro</p></Link>
 				<Link href='/hotels' className='button'><p>Hoteles</p></Link>
 			</div>
 		</section>
