@@ -7,8 +7,9 @@ const Gallery = () => {
         <div className='gallery-container'>
             <div className='header'>
                 <h1>Galería</h1>
-                <p>Para más información sobre el Prenacional Deportivo La Paz 2023, puedes visitar la página web oficial:</p>
-                <a className="enlace" href="https://sites.google.com/Itlp.edu.mx/prenacionaldeportivolapaz2023">Prenacional Deportivo La Paz 2023</a>
+                <p>Para más fotos sobre el Prenacional Deportivo Ensenada 2024, visita la siguiente galería</p>
+                <p>fecha limite para el preregistro: 15 de junio</p>
+                <a className="enlace" href="https://sites.google.com/Itlp.edu.mx/prenacionaldeportivolapaz2023">Galería de fotos</a>
             </div>
             
             <div className='img'>

@@ -6,7 +6,7 @@ const convocatoria = () => {
     <div>
       <ConvocatoriaInfo/>
   
-      <Footer/>
+   
       
     </div>
 

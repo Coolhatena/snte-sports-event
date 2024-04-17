@@ -4,7 +4,9 @@ import Contact from '@/components/contact/page.jsx'
 import Information from '@/components/information/page.jsx'
 import Gallery from '@/components/gallery/page.jsx'
 
+
 import './main.css'
+import Footer from '@/components/footer/Footer.jsx'
 const Main = () => {
   return (
 	<div>
@@ -20,6 +22,7 @@ const Main = () => {
     <Information/>
     <Gallery/>
     <Contact/>
+
 	</div>
   )
 }

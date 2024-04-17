@@ -9,7 +9,7 @@ const Contact = () => {
         <div className='flex'>
             <div className='header'>
                 <h1>Contáctanos</h1>
-                <p>El Instituto Tecnologico de Ensenada te puede atender en:</p>
+                <p>El Instituto Tecnológico de Ensenada te puede atender en:</p>
             </div>
            
             <div className='grid-container'>

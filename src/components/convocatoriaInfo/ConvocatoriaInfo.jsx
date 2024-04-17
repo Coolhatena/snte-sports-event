@@ -20,7 +20,7 @@ const ConvocatoriaInfo = () => {
 
         <div className='convocatoria-container'>
           <p>A los equipos representativos de las Delegaciones Sindicales de los Institutos Tecnológicos y Centros de: Mazatlán, Culiacán, Los Mochis, Huatabampo, Guaymas, Hermosillo, Valle del Yaqui, Nogales, Agua Prieta, Mexicali, Tijuana, Ensenada y La Paz B.C. a participar en el</p>
-          <h3 className='titulo-evento'>“X Evento Nacional Cultural y Deportivo de la Sección 61 del SNTE”</h3>
+          <h3 className='titulo-evento'>“X Evento Nacional Cultural y Deportivo de la Sección 61 del SNTE Zona Norte Pacífico”</h3>
           <p className='zona'>Zona Norte Pacífico</p>
           
 
