@@ -14,25 +14,25 @@ export const RegistrationInfo = () => {
 				height={500}
 			  />
 			  <h1>Registro</h1>
-			  <p className='subtitulo-convocatoria'>“X Evento Nacional Cultural y Deportivo de la Sección 61 del SNTE”</p>
+			  <p className='subtitulo-convocatoria'>“X Evento Nacional Cultural y Deportivo de la Sección 61 del SNTE Zona Norte Pacífico”</p>
 		  </div>
   
 		  <div className='convocatoria-container'>
 			<h4 className='subtitulo-bases'>Presentar la siguiente documentacion en fisico:</h4>
 			
 			<ul className='lista-bases'>
-			  <li>Cedula de registro: <a href="https://docs.google.com/document/d/1l8t3QnCuwAeE7JDrPTkrvEkjZWtaFJpo/edit?usp=sharing&ouid=111562611461705943793&rtpof=true&sd=true">Descargar aqui</a></li>
-			  <li>Cedula de inscripcion: <a href="https://docs.google.com/document/d/1FRvrV6tFrtkcNmRHVp153GfU8OvGYu2q/edit?usp=sharing&ouid=111562611461705943793&rtpof=true&sd=true">Descargar aqui</a></li>
-			  <li>Oficio enviado por el secretario gral. y/o secretario de cultura y deporte de la delegacion que representa</li>
-			  <li>Alguno de los siguientes documentos:
+			  <li>Cedula de registro: <a href="https://docs.google.com/document/d/1l8t3QnCuwAeE7JDrPTkrvEkjZWtaFJpo/edit?usp=sharing&ouid=111562611461705943793&rtpof=true&sd=true">Descargar aquí</a></li>
+			  <li>Cedula de inscripcion: <a href="https://docs.google.com/document/d/1FRvrV6tFrtkcNmRHVp153GfU8OvGYu2q/edit?usp=sharing&ouid=111562611461705943793&rtpof=true&sd=true">Descargar aquí</a></li>
+			  <li>Oficio enviado por el secretario gral. y/o secretario de cultura y deporte de la delegación que representa</li>
+			  <li>Identificación oficial (Cualquiera de los siguientes documentos válidos)
 				<ul>
-					<li>Copia de credencial INE por ambos lados</li>
-					<li>Pasaporte mexicano</li>
-					<li>Cedula profesional (Original y Copia)</li>
+					<li>Credencial INE (Original y copia por ambos lados)</li>
+					<li>Pasaporte mexicano (Original y copia)</li>
+					<li>Cédula profesional (Original y Copia)</li>
 				</ul>
 			  </li>
-			  <li>Comprobante de pago correspondiente a la (?) 11/2024 (Copia) </li>
-			  <li>Por acuerdo de la secretaría general de la delegacion se determino qe la inscripcion requerira una cooperacion de $100 mxn por cada participante en cada disciplina, que debe ser entregada a la sede el dia del registro</li>
+			  <li>Comprobante de pago correspondiente a la quincena 11/2024 (Copia) </li>
+			  <li>Por acuerdo de la secretaría general de la delegación se determinó que la inscripción requerira una cooperación de $100 mxn por cada participante en cada disciplina, que debe ser entregada a la sede el día del registro</li>
 			</ul>
 		  </div>
 		</div>
