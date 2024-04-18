@@ -34,6 +34,11 @@
     text-align: justify;
 }
 
+.extra {
+	margin-top: 2rem;
+	font-weight: bold;
+}
+
 @media screen and (max-width: 768px) {
     .grid-info {
         grid-template-columns: repeat(2, 1fr); /* Cambiar a 3 columnas en dispositivos con ancho máximo de 768px */

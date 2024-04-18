@@ -3,10 +3,10 @@ import Image from 'next/image'
 import Contact from '@/components/contact/page.jsx'
 import Information from '@/components/information/page.jsx'
 import Gallery from '@/components/gallery/page.jsx'
-
+import Footer from '@/components/footer/Footer.jsx'
 
 import './main.css'
-import Footer from '@/components/footer/Footer.jsx'
+
 const Main = () => {
   return (
 	<div>
