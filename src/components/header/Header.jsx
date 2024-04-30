@@ -21,7 +21,7 @@ const Header = () => {
   return (
 	<div className='container'>
 		<section className='navbar'>
-			<a href='https://snte.org.mx' className="containerLogo">
+			<a href='/' className="containerLogo">
 				<Image src='/img/Logo_Snte_Blanco.png' width={180} height={50} alt='Logo'/>
 			</a>
 
