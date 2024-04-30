@@ -6,9 +6,7 @@ import './page.css'
 const Hotels = () => {
   return (
 	<div className='hotels-container'>
-		<div className='row-1'>
 			<HotelCard 
-				className='hotel-1'
 				title={'Villa Marina'}
 				image={'villamarina.webp'}
 				web={'https://villamarinabc.com/es?currency=MXN'}
@@ -20,10 +18,10 @@ const Hotels = () => {
 					El estacionamiento es gratuito. Otras comodidades incluyen una piscina al aire libre con solárium, jardines paisajísticos, un restaurante informal y un bar.
 					Wi-Fi gratis, Estacionamiento gratuito, Accesible, Piscina al aire libre, Aire acondicionado, Servicio de lavandería etc.`
 				}
-				/>
+				rooms={['2 personas $1638.85 por noche tarifa del domingo a jueves']}
+			/>
 
 			<HotelCard 
-				className='hotel-2'
 				title={'San Nicolas'}
 				image={'sanNicolas.jpg'}
 				web={'https://www.snhotelcasino.com/?lang=es'}
@@ -35,12 +33,12 @@ const Hotels = () => {
 					El estacionamiento es gratuito. Hay una piscina al aire libre con restobar. Entre otras comodidades, se incluyen tinas y un área de spa con masajes. 
 					El casino está abierto las 24 horas. etc.`
 				}
-				/>
-		</div>		
-		
-		<div className='row-2'>
+				rooms={['Habitaciones dobles por noche $2755 (4 adultos)', 
+						'Habitación Sencilla por noche $2115 (2 adultos)'
+						]}
+			/>
+
 			<HotelCard 
-				className='hotel-3'
 				title={'Corona'}
 				image={'corona.jpg'}
 				web={'https://www.hotelcorona.com.mx/es/'}
@@ -53,8 +51,47 @@ const Hotels = () => {
 					Las suites mejoradas de dos niveles incluyen también chimenea y barra con lavabo. Se ofrece servicio a la habitación.
 					El estacionamiento es gratuito. Hay un restaurante colorido con terraza y un café/bar tranquilo. Entre otras comodidades, se incluyen una sala de ejercicios, una piscina al aire libre y un spa.`
 				}
-				/>
-		</div>
+				rooms={['Habitaciones: para 2 personas o 4 personas $1900 por noches (es el mismo costo)']}
+			/>
+
+			<HotelCard 
+				title={'Rey Sol'}
+				image={'reySol.jpg'}
+				web={'https://www.hoteles.com/ho192032/posada-el-rey-sol-ensenada-mexico/?locale=es_MX&pos=HCOM_LATAM&siteid=300400003'}
+				location={'Av. Blancarte 130, Zona Centro, 22800 Ensenada, B.C.'}
+				phone_number={'646 178 1601'}
+				description={
+					`Posada El Rey Sol ofrece una ubicación extraordinaria, está a solo unos pasos de Avenida Adolfo López Mateos. 
+					Los huéspedes pueden darse un buen chapuzón en la alberca al aire libre. 
+					Además, entre los servicios sin costo extra, pueden disfrutar de wifi, estacionamiento y el desayuno continental todos los días de 08:00 a 11:30. 
+					Entre sus amenidades y servicios destacan su terraza y su jardín. 
+					A otros visitantes les gusta el personal amable y el restaurante.`
+				}
+				rooms={['Habitacion sencilla para una persona $1800 (Incluyendo desayuno $1950)',
+						'Habitacion doble para dos personas $2000 (Incluyendo desayuno $2300)'
+						]}		
+			/>
+
+			<HotelCard 
+				title={'Estero Beach'}
+				image={'esteroBeach.webp'}
+				web={'https://resortesterobeach.com/es?currency=MXN'}
+				location={'Calle Playas, Del Estero S/N, Ex-Ejido Chapultepec, 22785 Ensenada, B.C.'}
+				phone_number={'646 178 1601'}
+				description={
+					`Además de ubicarse a solo 15 minutos en auto de Avenida Adolfo López Mateos, Estero Beach Hotel & Resort cuenta con acceso a una playa privada con sombrillas, masajes y vóleibol. 
+					Diviértete como nunca en su alberca al aire libre. 
+					Si quieres consentirte con un momento lleno de relajación, puedes hacerlo con un masaje de tejido profundo. 
+					Frente a la playa, Las Terrazas sirve el desayuno, la comida y la cena. 
+					La propiedad destaca por su bar junto a la alberca, su chapoteadero y su snack bar o deli. 
+					El personal amable y el restaurante están muy bien calificados por otros visitantes.`
+				}
+				rooms={['Habitaciones con vistas al mar $225 USD',
+						'Habitaciones con vista a la alberca $216 USD',
+						'Habitaciones con vista al jardín $180 USD',
+						'Habitaciones estándar $162 USD'
+						]}		
+			/>
 	</div>
   )
 }
