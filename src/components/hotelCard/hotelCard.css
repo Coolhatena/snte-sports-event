@@ -72,7 +72,7 @@
 
 .card-description {
 	font-size: 1.3rem;
-	text-justify: inter-word;
+	text-align: justify;
 }
 
 .card-icon__list {
