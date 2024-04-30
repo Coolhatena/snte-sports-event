@@ -8,7 +8,7 @@ const Gallery = () => {
             <div className='header'>
                 <h1>Galería</h1>
                 <p>Para más fotos sobre el Prenacional Deportivo Ensenada 2024, visita la siguiente galería</p>
-                <a className="enlace" href="https://sites.google.com/Itlp.edu.mx/prenacionaldeportivolapaz2023">Galería de fotos</a>
+                <a className="enlace" href="/">Galería de fotos</a>
             </div>
             
             <div className='img'>
