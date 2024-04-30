@@ -57,7 +57,7 @@ const Hotels = () => {
 			<HotelCard 
 				title={'Rey Sol'}
 				image={'reySol.jpg'}
-				web={'https://www.hoteles.com/ho192032/posada-el-rey-sol-ensenada-mexico/?locale=es_MX&pos=HCOM_LATAM&siteid=300400003'}
+				web={'https://www.hoteles.com/ho192032/posada-el-rey-sol-ensenada-mexico/'}
 				location={'Av. Blancarte 130, Zona Centro, 22800 Ensenada, B.C.'}
 				phone_number={'646 178 1601'}
 				description={
