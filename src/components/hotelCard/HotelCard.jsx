@@ -17,6 +17,7 @@ const HotelCard = ({title, image, web, location, phone_number, description, room
 				<FontAwesomeIcon icon={faGlobe} className='card-icon'/>
 				<a className='card-website' href={web}>{web}</a>
 			</div>
+			
 			<div className='card-info-container'>
 				<FontAwesomeIcon icon={faLocationDot} className='card-icon'/>
 				<p className='card-location'>{location}</p>
