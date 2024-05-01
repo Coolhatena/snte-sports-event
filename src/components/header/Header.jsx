@@ -1,21 +1,17 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import './header.css'
 
 import Link from 'next/link'
 
 const Header = () => {
+	const [isMenuActive, setisMenuActive] = useState(true)
+
 	const toogleMenu = () => {
-		const linksContainer = document.querySelector('.linksContainer');
-
-		if(linksContainer.style.display === 'none'){
-			linksContainer.style.display = 'flex';
-		}
-
-		else{
-			linksContainer.style.display = 'none';
-		}
+		const linksContainer = document.getElementById('hamburger');
+		setisMenuActive(!isMenuActive);
+		linksContainer.style.display = isMenuActive ? 'flex' : 'none';
 	}
 
   return (
@@ -33,7 +29,7 @@ const Header = () => {
 		</section>
 		
 		<section className='options'>
-			<div className='linksContainer'>
+			<div className='linksContainer' id='hamburger'>
 				<Link href='/' className='button'><p>Inicio</p></Link>
 				<Link href='/convocatoria' className='button'><p>Convocatoria</p></Link>
 				<Link href='https://drive.google.com/file/d/1Ke3fukty1_pO-tuOBln4_P6ZKOy9PQzl/view?usp=sharing' className='button'><p>Reglamento Deportivo</p></Link>
