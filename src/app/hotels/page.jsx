@@ -104,8 +104,9 @@ const Hotels = () => {
 					Luego de recorrer restaurantes, viñedos y probar la cocina de autor de la localidad, nuestro hotel le espera para un merecido descanso. 
 					Nuestras amenidades, servicios y desayuno tipo americano de cortesía están diseñados para que tenga todo lo que necesita en sus vacaciones o viajes de negocios.`
 				}
-				rooms={['Habitación Sencilla $1728.90',
-						'Habitación Doble $1864.50',
+				rooms={['Codigo de reservacion para precio especial: PRENACIONAL ITE',
+						'Habitación Sencilla $1525.50',
+						'Habitación Doble $1661.10',
 						]}		
 			/>
 	</div>
