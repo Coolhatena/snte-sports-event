@@ -92,6 +92,22 @@ const Hotels = () => {
 						'Habitaciones estándar $162 USD'
 						]}		
 			/>
+
+			<HotelCard 
+				title={'City Express'}
+				image={'cityExpress.jpg'}
+				web={'https://www.marriott.com/es/hotels/tijxe-city-express-ensenada/'}
+				location={'Boulevard Costero B1-A2, Manzana 29, Carlos Pacheco, 22890 Ensenada, B.C.'}
+				phone_number={'646 152 2265'}
+				description={
+					`Instalaciones modernas y servicio eficiente es lo que encontrará a su llegada a City Express Ensenada. 
+					Luego de recorrer restaurantes, viñedos y probar la cocina de autor de la localidad, nuestro hotel le espera para un merecido descanso. 
+					Nuestras amenidades, servicios y desayuno tipo americano de cortesía están diseñados para que tenga todo lo que necesita en sus vacaciones o viajes de negocios.`
+				}
+				rooms={['Habitación Sencilla $1728.90',
+						'Habitación Doble $1864.50',
+						]}		
+			/>
 	</div>
   )
 }
