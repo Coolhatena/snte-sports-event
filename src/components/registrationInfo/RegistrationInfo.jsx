@@ -23,6 +23,7 @@ export const RegistrationInfo = () => {
 			<ul className='lista-bases'>
 			  <li>Cédula de inscripción: <a href="https://docs.google.com/document/d/1FRvrV6tFrtkcNmRHVp153GfU8OvGYu2q/edit?usp=sharing&ouid=111562611461705943793&rtpof=true&sd=true">Descargar aquí</a></li>
 			  <li>Cédula de registro: <a href="https://docs.google.com/document/d/1l8t3QnCuwAeE7JDrPTkrvEkjZWtaFJpo/edit?usp=sharing&ouid=111562611461705943793&rtpof=true&sd=true">Descargar aquí</a></li>
+			  <li>Formato de credencial: <a href="https://docs.google.com/document/d/1LjMoWfRlITHBGzc9Ht4tse8y2o6HqFva/edit?usp=sharing&ouid=111562611461705943793&rtpof=true&sd=true">Descargar aquí</a></li>
 			  <li>Oficio enviado por el secretario gral. y/o secretario de cultura y deporte de la delegación que representa</li>
 			  <li>Identificación oficial (Cualquiera de los siguientes documentos válidos)
 				<ul>
