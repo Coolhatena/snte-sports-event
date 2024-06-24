@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .gallery-container {
     margin: 5rem;
     display: flex;
@@ -12,13 +18,37 @@
     border-radius: 4px;
 }
 
+.img-container {
+    overflow: auto;
+    white-space: nowrap;
+    margin: 2rem;
+}
+
+.img-container img {
+    padding: 1.5rem;
+    height: 30rem;
+    width: auto;
+}
+
 .header {
     display: flex;
     flex-direction: column;
 }
 
-.img {
-    justify-content: center;
-    text-align: center;
-    margin: 1rem;
+@media screen and (max-width: 768px) {
+    .img-container {
+        overflow: auto;
+        overflow-y: scroll;
+        white-space: nowrap;
+        display: flex;
+        flex-direction: column;
+        height: 15rem;
+        margin: 2rem;
+    }
+    
+    .img-container img {
+        padding: 1.5rem;
+        height: auto;
+        width: auto;
+    }
 }
