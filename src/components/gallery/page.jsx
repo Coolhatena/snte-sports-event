@@ -11,17 +11,17 @@ const Gallery = () => {
             </div>
             
             <div className='img-container'>
-                <img src='/img/img01.jpg'></img>
+                <img src='/img/dia1/img1.jpg'></img>
                 
-                <img src='/img/img02.jpg'></img>
+                <img src='/img/dia1/img2.jpg'></img>
                 
-                <img src='/img/img03.jpg'></img>
+                <img src='/img/dia1/img3.jpg'></img>
                 
-                <img src='/img/img04.jpg'></img>
+                <img src='/img/dia1/img4.jpg'></img>
                 
-                <img src='/img/img05.jpg'></img>
+                <img src='/img/dia1/img5.jpg'></img>
                 
-                <img src='/img/img06.jpg'></img>
+                <img src='/img/dia1/img6.jpg'></img>
             </div>
         </div>
     )
