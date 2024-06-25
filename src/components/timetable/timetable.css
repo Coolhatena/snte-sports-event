@@ -29,7 +29,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
 .card {
@@ -40,6 +40,41 @@ a:hover {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
+.card:hover {
+    background-color: var(--darkBlue);
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.card svg {
+    fill: #11224D;
+    transition: fill 0.3s ease;
+}
+  
+.card:hover svg {
+    fill: white;
+}
+
+  
 .card h2{
     margin: 1rem 0 0 0;
+}
+
+@media screen and (max-width: 768px) {
+    .time-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+        margin: 1rem 0;
+    }
+
+    .card {
+        padding: 2rem;
+        height: 15rem;
+        width: 15rem;
+        border: 1px solid #cccccc57;
+        background-color: #f0f0f0;
+        border-radius: 4px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
 }
