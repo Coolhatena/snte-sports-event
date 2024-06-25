@@ -19,13 +19,23 @@
 .time-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1.3rem;
+    grid-gap: 2rem;
     margin: 1rem 0;
+}
+
+a {
+    color: var(--darkBlue);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; 
 }
 
 .card {
     padding: 2rem;
     border: 1px solid #cccccc57;
+    background-color: #f0f0f0;
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }

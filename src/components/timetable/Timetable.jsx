@@ -18,45 +18,61 @@ const Timetable = () => {
             </div>
             
             <div className='time-grid'>
-                <div className='card'>
-                    <Chess/>
-                    <h2>Ajedrez</h2>
-                </div>
+                <a href="/img/horarios/ROL DE JUEGOS PLANTILLA AJEDREZ.jpg" download="ROL DE JUEGOS AJEDREZ.jpg">
+                    <div className='card'>
+                        <Chess/>
+                        <h2>Ajedrez</h2>
+                    </div>
+                </a>
 
-                <div className='card'>
-                    <StopWatch/>
-                    <h2>Atletismo Femenil</h2>
-                </div>
+                <a href="/img/horarios/ROL DE JUEGOS PLANTILLA ATLETISMO.jpg" download="ROL DE JUEGOS ATLETISMO.jpg">
+                    <div className='card'>
+                        <StopWatch/>
+                        <h2>Atletismo Femenil</h2>
+                    </div>
+                </a>
 
-                <div className='card'>
-                    <Run/>
-                    <h2>Atletismo Varonil</h2>
-                </div>
+                <a href="/img/horarios/ROL DE JUEGOS PLANTILLA ATLETISMO.jpg" download="ROL DE JUEGOS ATLETISMO.jpg">
+                    <div className='card'>
+                        <Run/>
+                        <h2>Atletismo Varonil</h2>
+                    </div>
+                </a>
 
-                <div className='card'>
-                    <Volleyball/>
-                    <h2>Voleibol</h2>
-                </div>
+                <a href="/img/horarios/ROL DE JUEGOS PLANTILLA VOLEIBOL.jpg" download="ROL DE JUEGOS VOLEIBOL.jpg">
+                    <div className='card'>
+                        <Volleyball/>
+                        <h2>Voleibol</h2>
+                    </div>
+                </a>
 
-                <div className='card'>
-                    <Baseball/>
-                    <h2>Béisbol</h2>
-                </div>
+                <a href="/" download="ROL DE JUEGOS BEISBOL.jpg">
+                    <div className='card'>
+                        <Baseball/>
+                        <h2>Béisbol</h2>
+                    </div>
+                </a>
 
-                <div className='card'>
-                    <Basquet/>
-                    <h2>Básquetbol</h2>
-                </div>
+                <a href="/img/horarios/ROL DE JUEGOS PLANTILLA BASQUETBOL.jpg" download="ROL DE JUEGOS BASQUETBOL.jpg">
+                    <div className='card'>
+                        <Basquet/>
+                        <h2>Básquetbol</h2>
+                    </div>
+                </a>
 
-                <div className='card'>
-                    <Soft/>
-                    <h2>Softbol</h2>
-                </div>
+                <a href="/" download="ROL DE JUEGOS PLANTILLA SOFTBOL.jpg">
+                    <div className='card'>
+                        <Soft/>
+                        <h2>Softbol</h2>
+                    </div>
+                </a>
 
-                <div className='card'>
-                    <Soccer/>
-                    <h2>Fútbol Soccer</h2>
-                </div>
+                <a href="/img/horarios/ROL DE JUEGOS PLANTILLA FUTBOL.jpg" download="ROL DE JUEGOS FUTBOL.jpg">
+                    <div className='card'>
+                        <Soccer/>
+                        <h2>Fútbol Soccer</h2>
+                    </div>
+                </a>
             </div>
         </div>
     )
