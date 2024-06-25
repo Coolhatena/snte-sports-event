@@ -1,5 +1,12 @@
 import React from 'react'
 import Chess from '../icons/Chess'
+import StopWatch from '../icons/StopWatch'
+import Volleyball from '../icons/Volleyball'
+import Baseball from '../icons/Baseball'
+import Basquet from '../icons/Basquet'
+import Soccer from '../icons/Soccer'
+import Soft from '../icons/Soft'
+import Run from '../icons/Run'
 import './timetable.css'
 
 const Timetable = () => {
@@ -17,31 +24,38 @@ const Timetable = () => {
                 </div>
 
                 <div className='card'>
+                    <StopWatch/>
                     <h2>Atletismo Femenil</h2>
                 </div>
 
                 <div className='card'>
+                    <Run/>
                     <h2>Atletismo Varonil</h2>
                 </div>
 
                 <div className='card'>
+                    <Volleyball/>
                     <h2>Voleibol</h2>
                 </div>
 
                 <div className='card'>
-                    <h2>Beisbol</h2>
+                    <Baseball/>
+                    <h2>Béisbol</h2>
                 </div>
 
                 <div className='card'>
-                    <h2>Basquetbol</h2>
+                    <Basquet/>
+                    <h2>Básquetbol</h2>
                 </div>
 
                 <div className='card'>
+                    <Soft/>
                     <h2>Softbol</h2>
                 </div>
 
                 <div className='card'>
-                    <h2>Futbol Soccer</h2>
+                    <Soccer/>
+                    <h2>Fútbol Soccer</h2>
                 </div>
             </div>
         </div>
