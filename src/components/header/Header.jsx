@@ -31,6 +31,7 @@ const Header = () => {
 		<section className='options'>
 			<div className='linksContainer' id='hamburger'>
 				<Link href='/' className='button'><p>Inicio</p></Link>
+				<Link href='/results' className='button'><p>Resultados</p></Link>
 				<Link href='/convocatoria' className='button'><p>Convocatoria</p></Link>
 				<Link href='https://drive.google.com/file/d/1Ke3fukty1_pO-tuOBln4_P6ZKOy9PQzl/view?usp=sharing' className='button'><p>Reglamento Deportivo</p></Link>
 				<Link href='https://docs.google.com/forms/d/e/1FAIpQLScIXNpgvX6zvjTvn6ZdP02WpcVy8IU6GFZ_hGIgVZXSHFD7PQ/viewform?usp=sf_link' 
