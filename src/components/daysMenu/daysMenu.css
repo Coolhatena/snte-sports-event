@@ -23,6 +23,12 @@ button:hover {
     color: white;
 }
 
+button:focus {
+    color: white;
+    background: rgb(27,57,106);
+    background: linear-gradient(90deg, rgba(27,57,106,1) 0%, rgba(17,34,77,1) 85%);
+}
+
 @media screen and (max-width: 768px) {
     .days-container {
         display: grid;
@@ -33,10 +39,4 @@ button:hover {
         align-items: center;
         text-align: center;
     }
-
-    button:focus {
-        background: rgb(27,57,106);
-        background: linear-gradient(90deg, rgba(27,57,106,1) 0%, rgba(17,34,77,1) 85%);
-    }
-
 }
