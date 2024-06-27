@@ -9,6 +9,7 @@ import { TableChess } from '../tableChess/TableChess';
 import { ResultTable } from '../resultTable/ResultTable';
 import { ResultDiscipline } from '../resultDiscipline/ResultDiscipline';
 import { logos } from '@/helpers/logos';
+import { TableChessRow } from '../tableChess/tableChessRow/TableChessRow';
 
 export const ResultsInfo = () => {
 	const [selectedDay, setSelectedDay] = useState('day1');
@@ -50,15 +51,17 @@ export const ResultsInfo = () => {
 						</ResultDiscipline>
 
 						<ResultDiscipline title={"Disciplina Ajedrez"}>
-							<TableChess 
-								tablero={"1"}
-								delegacion1={"Ensenada"} 
-								jBlancas={"Jose Jesus Cosio De La Rocha"}
-								puntos1={"1"}
-								delegacion2={"Culiacan"}
-								jNegras={"Ernesto Alonso Contreras Salazar"}
-								puntos2={"0"}
-							/>
+							<TableChess>
+								<TableChessRow 
+									tablero={"1"}
+									delegacion1={"Ensenada"} 
+									jBlancas={"Jose Jesus Cosio De La Rocha"}
+									puntos1={"1"}
+									delegacion2={"Culiacan"}
+									jNegras={"Ernesto Alonso Contreras Salazar"}
+									puntos2={"0"}
+								/>
+							</TableChess>
 						</ResultDiscipline>
 					</ResultDay>
 				)}
@@ -106,6 +109,50 @@ export const ResultsInfo = () => {
 							<ResultTable logo1={logos.nogales} team1={"Nogales"} score1={"53"} team2={"Hermosillo"} score2={"20"} logo2={logos.hermosillo} />
 
 							<ResultTable logo1={logos.laPaz} team1={"La Paz"} score1={"38"} team2={"Tijuana"} score2={"30"} logo2={logos.tijuana} />
+						</ResultDiscipline>
+						<ResultDiscipline title={"Disciplina Ajedrez"}>
+							<TableChess>
+								<TableChessRow 
+									tablero={"1"}
+									delegacion1={"Ensenada"} 
+									jBlancas={"Jose Jesus Cosio De La Rocha"}
+									puntos1={"2.5"}
+									delegacion2={"Tijuana"}
+									jNegras={"Juan Jose Gomez Quezada"}
+									puntos2={"3"}
+								/>
+
+								<TableChessRow 
+									tablero={"2"}
+									delegacion1={"Mexicali"} 
+									jBlancas={"Fernando Javier Haro Navarro"}
+									puntos1={"2"}
+									delegacion2={"Ensenada"}
+									jNegras={"Eddie Helbert Clemente Torres"}
+									puntos2={"2.5"}
+								/>
+
+								<TableChessRow 
+									tablero={"3"}
+									delegacion1={"Culiacan"} 
+									jBlancas={"Ernesto Alonso Contreras Salazar"}
+									puntos1={"1.5"}
+									delegacion2={"Nogales"}
+									jNegras={"Nelva Angelica Romero Rodriguez"}
+									puntos2={"1"}
+								/>
+
+								<TableChessRow 
+									tablero={"4"}
+									delegacion1={"Nogales"} 
+									jBlancas={"Francisco Gastelum Monarres"}
+									puntos1={"0"}
+									delegacion2={"Hermosillo"}
+									jNegras={"Jose De Jesus Netzahualcoyotl Soots"}
+									puntos2={"0.5"}
+								/>
+								
+							</TableChess>
 						</ResultDiscipline>
 					</ResultDay>
 				)}
