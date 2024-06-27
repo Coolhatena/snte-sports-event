@@ -2,6 +2,7 @@ import Image from 'next/image';
 import ItemList from '../items/ItemList';
 import './resultsInfo.css'
 import { ResultDay } from '../resultDay/ResultDay';
+import { ResultTable } from '../resultTable/ResultTable';
 import { ResultDiscipline } from '../resultDiscipline/ResultDiscipline';
 
 export const ResultsInfo = () => {
@@ -50,10 +51,31 @@ export const ResultsInfo = () => {
 				</ResultDiscipline>
 			</ResultDay>
 
-			<ResultDay title={"Resultados - dia 1"} >
+			<ResultDay title={"Resultados - dia 1"}>
 				<ResultDiscipline title={"Disciplina Softbol"}>
 					<h4>Mazatlán 13 - Nogales 3</h4>
 					<h4>Guaymas 11 - Tijuana 0</h4>
+				</ResultDiscipline>
+				<ResultDiscipline title={"Disciplina Futbol Soccer"}>
+					<h4>Ensenada 6 - Huatabampo 1</h4>
+					<h4>Culiacan 2 - La Paz 0</h4>
+				</ResultDiscipline>
+				<ResultDiscipline title={"Disciplina Voleibol Femenil"}>
+					<h4>Ensenada 2 - Nogales 0</h4>
+					<h4>La Paz 2 - Mexicali 1</h4>
+				</ResultDiscipline>
+				<ResultDiscipline title={"Disciplina Basquetbol"}>
+					<h4>La Paz 85 - Agua Prieta 19</h4>
+					<h4>Nogales 44 - Mexicali 18</h4>
+				</ResultDiscipline>
+			</ResultDay>
+
+			<ResultDay title={"Resultados - dia 1"}>
+				<ResultDiscipline title={"Disciplina Softbol"}>
+					<ResultTable logo1={"/img/logos-tecnm/logo-mazatlan.jpg"} team1={"Mazatlán"} score1={"13"} team2={"Nogales"} score2={"3"} logo2={"/img/logos-tecnm/logo-nogales.jpg"} />
+
+					<ResultTable logo1={"/img/logos-tecnm/logo-guaymas.jpg"} team1={"Guaymas"} score1={"11"} team2={"Tijuana"} score2={"0"} logo2={"/img/logos-tecnm/logo-tijuana.png"} />
+					
 				</ResultDiscipline>
 				<ResultDiscipline title={"Disciplina Futbol Soccer"}>
 					<h4>Ensenada 6 - Huatabampo 1</h4>
