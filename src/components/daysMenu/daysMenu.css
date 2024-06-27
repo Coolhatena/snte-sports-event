@@ -22,3 +22,21 @@ button:hover {
     background-color: var(--darkBlue);
     color: white;
 }
+
+@media screen and (max-width: 768px) {
+    .days-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 2rem;
+        grid-gap: 1rem;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    button:focus {
+        background: rgb(27,57,106);
+        background: linear-gradient(90deg, rgba(27,57,106,1) 0%, rgba(17,34,77,1) 85%);
+    }
+
+}
