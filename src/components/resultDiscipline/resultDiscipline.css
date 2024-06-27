@@ -1,5 +1,5 @@
 .resultdiscipline-container {
-	width: 100%;
+	width: auto;
 	margin: 1rem;
 	display: flex;
 	flex-direction: column;
@@ -16,5 +16,14 @@ h4 {
 	text-align: center;
 	font-size: 2rem;
 }
+
+@media screen and (max-width: 768px) {
+	.resultdiscipline-title {
+		text-align: center;
+		font-size: 1.6rem;
+		text-transform: uppercase;
+	}
+}
+
 
 

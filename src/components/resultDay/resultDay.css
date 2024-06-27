@@ -11,3 +11,11 @@
 	text-transform: uppercase;
 }
 
+@media screen and (max-width: 768px) {
+	.resultday-title {
+		text-align: center;
+		font-size: 2.4rem;
+		text-transform: uppercase;
+	}
+}
+

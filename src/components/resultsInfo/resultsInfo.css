@@ -124,4 +124,16 @@ li{
 	  top: 0;
 	  background-color: rgba(12, 39, 79, 0.614);
 	}  
+
+	.results-container {
+		margin: 1rem;
+		/*display: flex;*/
+		border-color: var(--tecnm-dark-blue);
+		justify-content: center;
+		text-align: justify;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 400;
+		font-size: 1rem;
+		margin: 6rem;
+	}
   }

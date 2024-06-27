@@ -43,3 +43,56 @@
     align-content: center;
     justify-content: center;
 }
+
+@media screen and (max-width: 768px) {
+    .resultTable-container {
+        width: auto;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+	.logo {
+        width: 100%;
+        height: 100%;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .score-left {
+        text-align: right;
+    }
+    
+    .score-right {
+        text-align: left;
+    }
+ 
+    .resultTable-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        gap: 20px;
+      }
+    
+      .resultTable-grid > .logo:nth-child(1) {
+        order: 1;
+      }
+    
+      .resultTable-grid > :nth-child(2) {
+        order: 2;
+        text-align: center;
+      }
+    
+      .resultTable-grid > .score {
+        order: 3;
+        justify-content: center;
+      }
+    
+      .resultTable-grid > :nth-child(4) {
+        order: 4;
+        text-align: center;
+      }
+    
+      .resultTable-grid > .logo:nth-child(5) {
+        order: 5;
+      }
+}
