@@ -109,6 +109,44 @@ export const ResultsInfo = () => {
 						</ResultDiscipline>
 					</ResultDay>
 				)}
+
+				{selectedDay === 'day3' && (
+
+					<ResultDay title={"Resultados - día 3"} >
+						<ResultDiscipline title={"Disciplina Softbol"}>
+							<ResultTable logo1={logos.mazatlan} team1={"Mazatlán"} score1={"12"} team2={"Guaymas"} score2={"6"} logo2={logos.guaymas} />
+
+							<ResultTable logo1={logos.nogales} team1={"Nogales"} score1={"10"} team2={"Hermosillo"} score2={"9"} logo2={logos.hermosillo} />
+						</ResultDiscipline>
+
+						<ResultDiscipline title={"Disciplina Fútbol Soccer"}>
+							<h4>SEMIFINALES</h4>
+							<ResultTable logo1={logos.mazatlan} team1={"Mazatlán"} score1={"2"} team2={"La Paz"} score2={"1"} logo2={logos.laPaz} />
+
+							<ResultTable logo1={logos.culiacan} team1={"Culiacán"} score1={"4"} team2={"Ensenada"} score2={"0"} logo2={logos.ensenada} />
+						</ResultDiscipline>
+
+						<ResultDiscipline title={"Disciplina Voleibol Femenil"}>
+							<h4>SEMIFINALES</h4>
+							<ResultTable logo1={logos.laPaz} team1={"La Paz"} score1={"2"} team2={"Ensenada"} score2={"1"} logo2={logos.ensenada} />
+
+							<ResultTable logo1={logos.culiacan} team1={"Culiacán"} score1={"2"} team2={"Hermosillo"} score2={"0"} logo2={logos.hermosillo} />
+						</ResultDiscipline>
+
+						<ResultDiscipline title={"Disciplina Voleibol Varonil"}>
+							<h4>SEMIFINALES</h4>
+							<ResultTable logo1={logos.culiacan} team1={"Culiacán"} score1={"2"} team2={"Ensenada"} score2={"1"} logo2={logos.ensenada} />
+
+							<ResultTable logo1={logos.huatabampo} team1={"Huatabampo"} score1={"2"} team2={"Nogales"} score2={"0"} logo2={logos.nogales} />
+						</ResultDiscipline>
+
+						<ResultDiscipline title={"Disciplina Básquetbol"}>
+							<ResultTable logo1={logos.tijuana} team1={"Tijuana"} score1={"60"} team2={"Agua Prieta"} score2={"28"} logo2={logos.aguaPrieta} />
+
+							<ResultTable logo1={logos.mexicali} team1={"Mexicali"} score1={"35"} team2={"Hermosillo"} score2={"29"} logo2={logos.hermosillo} />
+						</ResultDiscipline>
+					</ResultDay>
+				)}
 		  	</div>
 		</div>
 		);
