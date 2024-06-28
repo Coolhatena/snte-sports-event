@@ -36,32 +36,36 @@
 }
 
 .options {
+    display: flex;
+    flex-direction: column;
     width: var(--input-width);
     border-radius: 0.75rem; /* rounded-xl -> 12px -> 0.75rem */
     border: 1px solid rgba(88, 8, 8, 0.05); /* border-white/5 */
-    background-color: rgba(255, 255, 255, 0.05); /* bg-white/5 */
-    padding: 1rem; /* p-1 -> 1 * 0.25rem = 0.25rem */
+    background-color: rgb(255, 255, 255); /* bg-white/5 */
+    padding: 0.5rem; /* p-1 -> 1 * 0.25rem = 0.25rem */
     --anchor-gap: var(--spacing-1);
 }
 
 .item {
     display: flex;
     cursor: default; /* cursor-default */
-    align-items: center; /* items-center */
-    gap: 0.5rem; /* gap-2 -> 2 * 0.25rem = 0.5rem */
-    border-radius: 0.5rem; /* rounded-lg -> 8px -> 0.5rem */
+    align-items: justify; /* items-center */
+    border: 1px solid rgba(220, 221, 227, 0.296);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 8px 0px;
     padding: 1rem;
+    border-radius: 0.5rem; /* rounded-lg -> 8px -> 0.5rem */
     user-select: none; /* select-none */
 }
 
 .item[data-focus] {
     background-color: rgba(221, 223, 255, 0.296); /* data-[focus]:bg-white/10 */
+    font-weight: 500;
 }
 
 .icon-check {
     visibility: hidden; /* invisible */
     color: var(--darkBlue);
-    height: 5rem;
+    height: 2rem;
 }
 
 .item[data-selected] .icon-check {
@@ -69,5 +73,6 @@
 }
 
 .name-item {
-    font-size: 1.4rem; /* text-sm -> 14px -> 0.875rem */
+    font-size: 1.3rem; /* text-sm -> 14px -> 0.875rem */
+    padding: 1rem;
 }
