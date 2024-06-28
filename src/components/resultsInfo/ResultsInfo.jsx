@@ -57,8 +57,48 @@ export const ResultsInfo = () => {
 									delegacion1={"Ensenada"} 
 									jBlancas={"Jose Jesus Cosio De La Rocha"}
 									puntos1={"1"}
-									delegacion2={"Culiacan"}
+									delegacion2={"Culiacán"}
 									jNegras={"Ernesto Alonso Contreras Salazar"}
+									puntos2={"0"}
+								/>
+
+								<TableChessRow 
+									tablero={"2"}
+									delegacion1={"Ensenada"} 
+									jBlancas={"Eddie Helbert Clemente Torres"}
+									puntos1={"1"}
+									delegacion2={"Hermosillo"}
+									jNegras={"María Teresa Vivian"}
+									puntos2={"0"}
+								/>
+
+								<TableChessRow 
+									tablero={"3"}
+									delegacion1={"Hermosillo"} 
+									jBlancas={"José De Jesús Netzahualcoyotl Soots"}
+									puntos1={"0"}
+									delegacion2={"La Paz"}
+									jNegras={"Priscilla Castillo Madrid"}
+									puntos2={"1"}
+								/>
+
+								<TableChessRow 
+									tablero={"4"}
+									delegacion1={"Mexicali"} 
+									jBlancas={"Fernando Javier Haro Navarro"}
+									puntos1={"1"}
+									delegacion2={"Nogales"}
+									jNegras={"Nelva Angélica Romero Rodríguez"}
+									puntos2={"0"}
+								/>
+
+								<TableChessRow 
+									tablero={"5"}
+									delegacion1={"Tijuana"} 
+									jBlancas={"Juán José Gómez Quezada"}
+									puntos1={"1"}
+									delegacion2={"Nogales"}
+									jNegras={"Francisco Gastelum Monarrres"}
 									puntos2={"0"}
 								/>
 							</TableChess>
