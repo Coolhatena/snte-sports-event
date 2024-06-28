@@ -9,6 +9,7 @@ import { TableChess } from '../tableChess/TableChess';
 import { ResultTable } from '../resultTable/ResultTable';
 import { ResultDiscipline } from '../resultDiscipline/ResultDiscipline';
 import { logos } from '@/helpers/logos';
+import { ComboAtletismo } from '../comboAtletismo/ComboAtletismo';
 import { TableChessRow } from '../tableChess/tableChessRow/TableChessRow';
 
 export const ResultsInfo = () => {
@@ -102,6 +103,10 @@ export const ResultsInfo = () => {
 									puntos2={"0"}
 								/>
 							</TableChess>
+						</ResultDiscipline>
+
+						<ResultDiscipline title={"Disciplina atletismo"}>
+							<ComboAtletismo/>
 						</ResultDiscipline>
 					</ResultDay>
 				)}
