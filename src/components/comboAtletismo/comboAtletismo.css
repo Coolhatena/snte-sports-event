@@ -1,5 +1,8 @@
 .combobox-container {
     margin: 1rem; /* 20 * 0.25rem = 5rem */
+    justify-items: center;
+    align-items: center;
+    width: 50%;
 }
 
 .combobox-input {
@@ -7,7 +10,7 @@
    border-radius: 0.7rem;
 }
 
-.input {
+.input-combo {
     width: 100%;
     border-radius: 0.7rem; /* rounded-lg -> 8px -> 0.5rem */
     border: none;
@@ -17,7 +20,7 @@
     color: white /* text-white */
 }
 
-.button {
+.button-combo {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -31,11 +34,11 @@
     fill: var(--darkBlue)
 }
 
-.button:hover .icon-down {
+.button-combo:hover .icon-down {
     fill: rgba(255, 255, 255, 1); /* group-data-[hover]:fill-white */
 }
 
-.options {
+.options-combo {
     display: flex;
     flex-direction: column;
     width: var(--input-width);
@@ -46,7 +49,7 @@
     --anchor-gap: var(--spacing-1);
 }
 
-.item {
+.item-combo {
     display: flex;
     cursor: default; /* cursor-default */
     align-items: justify; /* items-center */
@@ -57,7 +60,7 @@
     user-select: none; /* select-none */
 }
 
-.item[data-focus] {
+.item-combo[data-focus] {
     background-color: rgba(221, 223, 255, 0.296); /* data-[focus]:bg-white/10 */
     font-weight: 500;
 }
@@ -68,11 +71,11 @@
     height: 2rem;
 }
 
-.item[data-selected] .icon-check {
+.item-combo[data-selected] .icon-check {
     visibility: visible;
 }
 
-.name-item {
+.name-item-combo {
     font-size: 1.3rem; /* text-sm -> 14px -> 0.875rem */
     padding: 1rem;
 }

@@ -44,12 +44,12 @@ export const ComboAtletismo = ({ children }) => {
         <Combobox value={selected} onChange={(value) => setSelected(value)} onClose={() => setQuery('')}>
             <div className='combobox-input'>
                 <ComboboxInput
-                    className={clsx('input')}
+                    className={clsx('input-combo')}
                     displayValue={(option) => option?.name}
                     onChange={(event) => setQuery(event.target.value)}
                 />
 
-                <ComboboxButton className="button">
+                <ComboboxButton className="button-combo">
                     <ChevronDownIcon className="icon-down" />
                 </ComboboxButton>
             </div>
@@ -57,16 +57,16 @@ export const ComboAtletismo = ({ children }) => {
             <ComboboxOptions
                 anchor="bottom"
                 transition
-                className={clsx('options')}
+                className={clsx('options-combo')}
             >
                 {filteredOptions.map((option) => (
                     <ComboboxOption
                         key={option.id}
                         value={option}
-                        className="item"
+                        className="item-combo"
                     >
                         <CheckIcon className="icon-check" />
-                        <div className="name-item">
+                        <div className="name-item-combo">
                             {option.name}
                         </div>
                     </ComboboxOption>
