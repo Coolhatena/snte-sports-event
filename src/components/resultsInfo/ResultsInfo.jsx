@@ -15,6 +15,7 @@ import { FinalChess } from '../finalChess/FinalChess';
 import { FinalChessRow } from '../finalChess/finalChessRow/FinalChessRow';
 import { TableAthleticsRow } from '../tableAthletics/tableAthleticsRow/TableAthleticsRow';
 import { TableAthletics } from '../tableAthletics/TableAthletics';
+import { Finalist } from '../finalist/Finalist';
 
 export const ResultsInfo = () => {
 	const [selectedDay, setSelectedDay] = useState('day1');
@@ -930,6 +931,228 @@ export const ResultsInfo = () => {
 									</TableAthletics>
 								</>
 							)}
+						</ResultDiscipline>
+					</ResultDay>
+				)}
+
+				{selectedDay === 'day4' && (
+
+					<ResultDay title={"Resultados - día 4"} >
+						<ResultDiscipline title={"Disciplina Basquebol femenil"}>
+							<Finalist team1={"IT La Paz"} logo1={logos.laPaz}/>
+						</ResultDiscipline>
+
+						<ResultDiscipline title={"Disciplina Ajedrez"}>
+							<Finalist team1={"Juan Jose Gomez Quezada"} logo1={logos.tijuana} team2={"Eddie H. Clemente Torres"} logo2={logos.ensenada} team3={"Jose Jesus Cosio De La Rocha"} logo3={logos.ensenada}/>
+						</ResultDiscipline>
+
+						<ResultDiscipline title={"Disciplina Futbol Soccer"}>
+							<Finalist team1={"IT Culiacan"} logo1={logos.culiacan} team2={"IT Mazatlán"} logo2={logos.mazatlan} team3={"IT La Paz"} logo3={logos.laPaz}/>
+						</ResultDiscipline>
+
+						<ResultDiscipline title={"Disciplina Beisbol"}>
+							<Finalist team1={"IT Culiacan"} logo1={logos.culiacan}/>
+						</ResultDiscipline>
+
+						<ResultDiscipline title={"Disciplina Voleibol Varonil"}>
+							<Finalist team1={"IT Huatabampo"} logo1={logos.huatabampo} team2={"IT Culiacan"} logo2={logos.culiacan} team3={"IT Nogales"} logo3={logos.nogales}/>
+						</ResultDiscipline>
+
+						<ResultDiscipline title={"Disciplina Voleibol Femenil"}>
+							<Finalist team1={"IT Culiacan"} logo1={logos.culiacan} team2={"IT La Paz"} logo2={logos.laPaz} team3={"IT Ensenada"} logo3={logos.ensenada}/>
+						</ResultDiscipline>
+
+						<ResultDiscipline title={"Disciplina atletismo"}>
+							<ComboAtletismo 
+								selectedCategory={selectedCategory}
+								setSelectedCategory={handleCategoryChange}
+								query={query}
+								setQuery={setQuery}
+							/>
+
+							{selectedCategory !== 'Deportes de Exhibición' && (
+
+								<TableAthletics selectedCategory={selectedCategory} distance={distance}>
+									{selectedCategory === 'Jumbo (60 en adelante) Femenil 400' && (
+										<>
+											<TableAthleticsRow
+												city={"Hermosillo -D-V-97"}
+												name={"Maria Teresa Vivian"}
+												time={"2'16\"70"}
+												place={"1ro."}
+												/>
+											<TableAthleticsRow
+												city={"Mexicali -D-V-5"}
+												name={"Alicia Salazar Tovar"}
+												time={"2'20\"63"}
+												place={"2do."}
+											/>
+										
+										</>
+									)}
+
+									{selectedCategory === 'Jumbo (60 en adelante) Varonil 400' && (
+										<>
+											<TableAthleticsRow
+												city={"Ensenada -D-V-4"}
+												name={"Rodolfo Acosta Ojeda"}
+												time={"1'15\"41"}
+												place={"1ro."}
+												/>
+											<TableAthleticsRow
+												city={"Hermosillo -D-V-97"}
+												name={"Cesar Mesinas"}
+												time={"1'23\"03"}
+												place={"2do."}
+											/>
+
+											<TableAthleticsRow
+												city={"Tijuana -D-V-6"}
+												name={"Cesar Jaime Heriberto Valdez Guzman"}
+												time={"1'47\"00"}
+												place={"3ro."}
+											/>
+										</>
+									)}
+
+									{selectedCategory === 'Super-Master (50-59 años) Femenil 400' && (
+										<>
+											<TableAthleticsRow
+												city={"Hermosillo -D-V-97"}
+												name={"Matilde Salazar"}
+												time={"2'40\"61"}
+												place={"1ro."}
+											/>
+
+											<TableAthleticsRow
+												city={"Hermosillo -D-V-97"}
+												name={"Sandra Torres"}
+												time={"2'51\"76"}
+												place={"2do."}
+											/>
+										</>
+									)}
+
+									{selectedCategory === 'Super-Master (50-59 años) Varonil 400' && (
+										<>
+											<TableAthleticsRow
+												city={"Ensenada -D-V-4"}
+												name={"Jose Jesus Cosio De La Rocha"}
+												time={"1'27\"07"}
+												place={"1ro."}
+											/>
+
+											<TableAthleticsRow
+												city={"Agua Prieta -D-V-96"}
+												name={"Francisco Javier Medinilla"}
+												time={"1'35\"56"}
+												place={"2do."}
+											/>
+
+											<TableAthleticsRow
+												city={"Huatabampo -D-V-98"}
+												name={"Damian Alberto Valdez Morales"}
+												time={"1'43\"36"}
+												place={"3ro."}
+											/>
+										</>
+									)}
+
+									{selectedCategory === 'Master (40-49 años) Femenil 400' && (
+										<>
+											<TableAthleticsRow
+												city={"Huatabampo -D-V-98"}
+												name={"Elda Guadalupe Nieblas Gomez"}
+												time={"1'51\"85"}
+												place={"1ro."}
+											/>
+
+											<TableAthleticsRow
+												city={"Huatabampo -D-V-98"}
+												name={"Maria Antonia Armenta Nieblas"}
+												time={"1'56\"19"}
+												place={"2do."}
+											/>
+
+											<TableAthleticsRow
+												city={"Hermosillo -D-V-98"}
+												name={"Zulema De la Puente Naranjo"}
+												time={"2'01\"76"}
+												place={"3ro."}
+											/>
+										</>
+									)}
+
+									{selectedCategory === 'Master (40-49 años) Varonil 400' && (
+										<>
+											<TableAthleticsRow
+												city={"Tijuana -D-V-6"}
+												name={"Victor Raul Estrella Oliden"}
+												time={"1'05\"47"}
+												place={"1ro."}
+											/>
+
+											<TableAthleticsRow
+												city={"Mazatlan -D-V-93"}
+												name={"Ramiro Martinez Vera"}
+												time={"1'11\"63"}
+												place={"2do."}
+											/>
+
+											<TableAthleticsRow
+												city={"Guaymas -D-V-95"}
+												name={"Esteban De Jesus Navarro Meza"}
+												time={"1'24\"66"}
+												place={"3ro."}
+											/>
+										</>
+									)}
+
+									{selectedCategory === 'Veterano (30-39 años) Femenil 400' && (
+										
+										<TableAthleticsRow
+											city={"Mexicali -D-V-5"}
+											name={"Liliana Sanchez Ortega"}
+											time={"1'13\"79"}
+											place={"1ro."}
+										/>
+										
+									)}
+
+									{selectedCategory === 'Veterano (30-39 años) Varonil 400' && (
+										<TableAthleticsRow
+											city={"Hermosillo -D-V-97"}
+											name={"Roman Alberto Zayas Castillo"}
+											time={"1'43\"62"}
+											place={"1ro."}
+										/>
+										
+									)}
+
+									{selectedCategory === 'Libre (hasta 29 años) Varonil 400' && (
+										<TableAthleticsRow
+											city={"Nogales -D-V-99"}
+											name={"Martin Alejandro Herrera Arreola"}
+											time={"1'28\"63"}
+											place={"1ro."}
+										/>
+										
+									)}
+								</TableAthletics>
+							)}
+						</ResultDiscipline>
+						
+					</ResultDay>
+				)}
+
+				{selectedDay === 'day5' && (
+					<ResultDay title={"Resultados - día 5"} >
+						<ResultDiscipline title={"Disciplina Softbol"}>
+							<Finalist team1={"IT Mazatlán"} logo1={logos.mazatlan} team2={"IT Nogales"} logo2={logos.nogales} team3={"IT Guaymas"} logo3={logos.guaymas}/>
+						</ResultDiscipline>
+
+						<ResultDiscipline title={"Disciplina Basquetbol Varonil"}>
+							<Finalist team1={"IT Tijuana"} logo1={logos.tijuana} team2={"IT La Paz"} logo2={logos.laPaz} team3={"IT Mexicali"} logo3={logos.mexicali}/>
 						</ResultDiscipline>
 					</ResultDay>
 				)}
