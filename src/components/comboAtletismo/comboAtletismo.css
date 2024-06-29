@@ -1,5 +1,5 @@
 .combobox-container {
-    margin: 1rem; /* 20 * 0.25rem = 5rem */
+    margin: 1rem;
     justify-items: center;
     align-items: center;
     width: 50%;
@@ -11,13 +11,12 @@
 }
 
 .input-combo {
-    width: 100%;
-    border-radius: 0.7rem; /* rounded-lg -> 8px -> 0.5rem */
+    border-radius: 0.7rem;
     border: none;
     background-color: var(--darkBlue);
     padding: 1rem;
-    font-size: 1.5rem; /* text-sm -> 14px -> 0.875rem */
-    color: white /* text-white */
+    font-size: 1.5rem;
+    color: white
 }
 
 .button-combo {
@@ -25,50 +24,49 @@
     top: 0;
     bottom: 0;
     right: 0;
-    padding: 1rem;
 }
 
 .icon-down {
     height: 2rem;
-    padding: auto;
     fill: var(--darkBlue)
 }
 
 .button-combo:hover .icon-down {
-    fill: rgba(255, 255, 255, 1); /* group-data-[hover]:fill-white */
+    fill: rgba(255, 255, 255, 1);
 }
 
 .options-combo {
     display: flex;
     flex-direction: column;
     width: var(--input-width);
-    border-radius: 0.75rem; /* rounded-xl -> 12px -> 0.75rem */
-    border: 1px solid rgba(88, 8, 8, 0.05); /* border-white/5 */
-    background-color: rgb(255, 255, 255); /* bg-white/5 */
-    padding: 0.5rem; /* p-1 -> 1 * 0.25rem = 0.25rem */
+    border-radius: 0.75rem;
+    border: 1px solid rgba(88, 8, 8, 0.05);
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem;
+    grid-gap: 1rem;
     --anchor-gap: var(--spacing-1);
 }
 
 .item-combo {
     display: flex;
-    cursor: default; /* cursor-default */
-    align-items: justify; /* items-center */
+    cursor: default;
+    align-items: justify;
     border: 1px solid rgba(220, 221, 227, 0.296);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 8px 0px;
     padding: 1rem;
-    border-radius: 0.5rem; /* rounded-lg -> 8px -> 0.5rem */
-    user-select: none; /* select-none */
+    border-radius: 0.5rem;
 }
 
 .item-combo[data-focus] {
-    background-color: rgba(221, 223, 255, 0.296); /* data-[focus]:bg-white/10 */
+    background-color: rgba(162, 168, 255, 0.296);
     font-weight: 500;
 }
 
 .icon-check {
-    visibility: hidden; /* invisible */
+    visibility: hidden;
     color: var(--darkBlue);
     height: 2rem;
+    margin: 0.5rem;
 }
 
 .item-combo[data-selected] .icon-check {
@@ -76,15 +74,67 @@
 }
 
 .name-item-combo {
-    font-size: 1.3rem; /* text-sm -> 14px -> 0.875rem */
+    font-size: 1.3rem;
     padding: 1rem;
 }
 
 @media screen and (max-width: 768px) {
     .combobox-container {
-        margin: 1rem; /* 20 * 0.25rem = 5rem */
+        margin: 1rem;
         justify-items: center;
         align-items: center;
         width: 100%;
+    }
+    
+    .combobox-input {
+        position: relative;
+        border-radius: 0.7rem;
+    }
+        
+    .input-combo {
+        width: 100%;
+        border-radius: 0.7rem;
+        border: none;
+        background-color: var(--darkBlue);
+        padding: 1rem;
+        font-size: 1.5rem;
+        color: white
+    }
+
+    .button-combo {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        padding: 1rem;
+        background-color: white;
+    }
+
+    .icon-down {
+        height: 2rem;
+        padding: auto;
+        fill: var(--darkBlue)
+    }
+
+    .item-combo {
+        display: flex;
+        cursor: default;
+        align-items: justify;
+        border: 1px solid rgba(220, 221, 227, 0.296);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 8px 0px;
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+    
+    .item-combo[data-focus] {
+        background-color: rgba(221, 223, 255, 0.296);
+        font-weight: 500;
+    }
+        
+    .icon-check {
+        visibility: hidden;
+        color: var(--darkBlue);
+        height: 2.5rem;
+        margin: 1rem;
     }
 }
