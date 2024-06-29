@@ -79,3 +79,12 @@
     font-size: 1.3rem; /* text-sm -> 14px -> 0.875rem */
     padding: 1rem;
 }
+
+@media screen and (max-width: 768px) {
+    .combobox-container {
+        margin: 1rem; /* 20 * 0.25rem = 5rem */
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+    }
+}

@@ -1,5 +1,6 @@
 .resultTable-container {
 	width: 100%;
+    max-width: 100%;
     margin: 1rem;
 	display: flex;
 	flex-direction: column;
@@ -17,7 +18,7 @@
     padding: 1rem;
 	text-align: center;
 	font-size: 2rem;
-
+    width: 100%;
 }
 
 .score{
@@ -46,7 +47,8 @@
 
 @media screen and (max-width: 768px) {
     .resultTable-container {
-        width: auto;
+        width: 100%;
+        max-width: 100%;
         margin: 1rem;
         display: flex;
         flex-direction: column;
