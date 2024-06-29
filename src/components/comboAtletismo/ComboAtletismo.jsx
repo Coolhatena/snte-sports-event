@@ -27,10 +27,7 @@ const options = [
     {id: 17, name: 'Deportes de Exhibicion'},
 ]
 
-export const ComboAtletismo = ({ children }) => {
-
-    const [query, setQuery] = useState('')
-    const [selected, setSelected] = useState(options[1])
+export const ComboAtletismo = ({ selectedCategory, setSelectedCategory, query, setQuery }) => {
 
     const filteredOptions = 
         query === ''
@@ -41,11 +38,18 @@ export const ComboAtletismo = ({ children }) => {
 
   return (
 	<div className='combobox-container'>
-        <Combobox value={selected} onChange={(value) => setSelected(value)} onClose={() => setQuery('')}>
+            <Combobox
+                value={selectedCategory}
+                onChange={(value) => {
+                    setSelectedCategory(value.name);
+                    setQuery(value.name);
+                }}
+                onClose={() => setQuery('')}
+            >
             <div className='combobox-input'>
                 <ComboboxInput
                     className={clsx('input-combo')}
-                    displayValue={(option) => option?.name}
+                    displayValue={() => selectedCategory}
                     onChange={(event) => setQuery(event.target.value)}
                 />
 

@@ -11,14 +11,17 @@ import { ResultDiscipline } from '../resultDiscipline/ResultDiscipline';
 import { logos } from '@/helpers/logos';
 import { ComboAtletismo } from '../comboAtletismo/ComboAtletismo';
 import { TableChessRow } from '../tableChess/tableChessRow/TableChessRow';
+import { TableAthleticsRow } from '../tableAthletics/tableAthleticsRow/TableAthleticsRow';
+import { TableAthletics } from '../tableAthletics/TableAthletics';
 
 export const ResultsInfo = () => {
 	const [selectedDay, setSelectedDay] = useState('day1');
+	const [query, setQuery] = useState('');
+	const [selectedCategory, setSelectedCategory] = useState('Categoria')
 
 	const handleDayChange = (day) => {
 		setSelectedDay(day);
 	};
-
 
 	return (
 		<div>
@@ -106,7 +109,21 @@ export const ResultsInfo = () => {
 						</ResultDiscipline>
 
 						<ResultDiscipline title={"Disciplina atletismo"}>
-							<ComboAtletismo/>
+							<ComboAtletismo 
+								selectedCategory={selectedCategory}
+								setSelectedCategory={setSelectedCategory}
+								query={query}
+								setQuery={setQuery}
+							/>
+
+							<TableAthletics selectedCategory={selectedCategory}>
+								<TableAthleticsRow
+									city={"Ciudad"}
+									name={"Nombre"}
+									time={"time"}
+									place={"place"}
+								/>
+							</TableAthletics>
 						</ResultDiscipline>
 					</ResultDay>
 				)}
