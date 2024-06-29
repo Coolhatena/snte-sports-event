@@ -17,11 +17,86 @@ import { TableAthletics } from '../tableAthletics/TableAthletics';
 export const ResultsInfo = () => {
 	const [selectedDay, setSelectedDay] = useState('day1');
 	const [query, setQuery] = useState('');
-	const [selectedCategory, setSelectedCategory] = useState('Categoria')
+	const [selectedCategory, setSelectedCategory] = useState('Categoria');
+	const [distance, setDistance] = useState('');
 
 	const handleDayChange = (day) => {
 		setSelectedDay(day);
 	};
+
+	const handleCategoryChange = (category) => {
+		setSelectedCategory(category);
+
+		switch (category) {
+			case 'Jumbo (60 en adelante) Varonil':
+				setDistance('10000 MTS');
+				break;
+
+			case 'Master (40-49 años) Varonil':
+				setDistance('10000 MTS');
+				break;
+			
+			case 'Super-Master (50-59 años) Femenil':
+				setDistance('100 MTS');
+				break;
+				
+			case 'Super-Master (50-59 años) Varonil':
+				setDistance('100 MTS');
+				break;
+
+			case 'Master (40-49 años) Femenil':
+				setDistance('100 MTS');
+				break;
+
+			case 'Master (40-49 años) Varonil 100':
+				setDistance('100 MTS');
+				break;
+				
+			case 'Veterano (30-39 años) Femenil':
+				setDistance('100 MTS');
+				break;
+				
+			case 'Veterano (30-39 años) Varonil':
+				setDistance('100 MTS');
+				break;
+
+			case 'Libre (hasta 29 años) Femenil':
+				setDistance('100 MTS');
+				break;
+
+			case 'Libre (hasta 29 años) Varonil':
+				setDistance('100 MTS');
+				break;
+
+			case 'Jumbo (60 en adelante) Femenil':
+				setDistance('1500 MTS');
+				break;
+
+			case 'Super-Master (50-59 años) Femenil 1500':
+				setDistance('1500 MTS');
+				break;
+
+			case 'Jumbo (60 en adelante) Varonil 1500':
+				setDistance('1500 MTS');
+				break;
+
+			case 'Super-Master (50-59 años) Varonil 1500':
+				setDistance('1500 MTS');
+				break;
+
+			case 'Master (40-49 años) Varonil 1500':
+				setDistance('1500 MTS');
+				break;
+
+			case 'Veterano (30-39 años) Varonil 1500':
+				setDistance('1500 MTS');
+				break;
+
+			default:
+				setDistance('');
+				break;
+		}
+	}
 
 	return (
 		<div>
@@ -111,18 +186,18 @@ export const ResultsInfo = () => {
 						<ResultDiscipline title={"Disciplina atletismo"}>
 							<ComboAtletismo 
 								selectedCategory={selectedCategory}
-								setSelectedCategory={setSelectedCategory}
+								setSelectedCategory={handleCategoryChange}
 								query={query}
 								setQuery={setQuery}
 							/>
 
-							{selectedCategory !== 'Deportes de Exhibicion' && (
+							{selectedCategory !== 'Deportes de Exhibición' && (
 
-								<TableAthletics selectedCategory={selectedCategory}>
+								<TableAthletics selectedCategory={selectedCategory} distance={distance}>
 									{selectedCategory === 'Jumbo (60 en adelante) Varonil' && (
 										<TableAthleticsRow
 											city={"Mexicali -D-V-5"}
-											name={"Fernando Avelar Martinez"}
+											name={"Fernando Avelar Martínez"}
 											time={"01:07:40"}
 											place={"1ro."}
 										/>
@@ -131,7 +206,7 @@ export const ResultsInfo = () => {
 									{selectedCategory === 'Master (40-49 años) Varonil' && (
 										<TableAthleticsRow
 											city={"Mexicali -D-V-5"}
-											name={"Jesus Martin Valdez Duarte"}
+											name={"Jesús Martín Valdez Duarte"}
 											time={"01:07:40"}
 											place={"1ro."}
 										/>
@@ -166,7 +241,7 @@ export const ResultsInfo = () => {
 										<>
 											<TableAthleticsRow
 												city={"Ensenada -D-V-4"}
-												name={"Martin Franco Jaramillo"}
+												name={"Martín Franco Jaramillo"}
 												time={"14.28"}
 												place={"1ro."}
 											/>
@@ -212,7 +287,7 @@ export const ResultsInfo = () => {
 										</>
 									)}
 
-									{selectedCategory === 'Master (40-49 años) Varonil' && (
+									{selectedCategory === 'Master (40-49 años) Varonil 100' && (
 										<>
 											<TableAthleticsRow
 												city={"Nogales -D-V-99"}
@@ -334,7 +409,7 @@ export const ResultsInfo = () => {
 										</>
 									)}
 
-									{selectedCategory === 'Super-Master (50-59 años) Femenil' && (
+									{selectedCategory === 'Super-Master (50-59 años) Femenil 1500' && (
 										<>
 											<TableAthleticsRow
 												city={"Hermosillo -D-V-97"}
@@ -352,7 +427,7 @@ export const ResultsInfo = () => {
 										</>
 									)}
 
-									{selectedCategory === 'Jumbo (60 en adelante) Varonil' && (
+									{selectedCategory === 'Jumbo (60 en adelante) Varonil 1500' && (
 										<>
 											<TableAthleticsRow
 												city={"Ensenada -D-V-4"}
@@ -370,7 +445,7 @@ export const ResultsInfo = () => {
 										</>
 									)}
 
-									{selectedCategory === 'Super-Master (50-59 años) Varonil' && (
+									{selectedCategory === 'Super-Master (50-59 años) Varonil 1500' && (
 										<>
 											<TableAthleticsRow
 												city={"Huatabampo -D-V-98"}
@@ -381,7 +456,7 @@ export const ResultsInfo = () => {
 										</>
 									)}
 
-									{selectedCategory === 'Master (40-49 años) Varonil' && (
+									{selectedCategory === 'Master (40-49 años) Varonil 1500' && (
 										<>
 											<TableAthleticsRow
 												city={"Ensenada -D-V-4"}
@@ -399,10 +474,29 @@ export const ResultsInfo = () => {
 										</>
 									)}
 
+									{selectedCategory === 'Veterano (30-39 años) Varonil 1500' && (
+										<>
+											<TableAthleticsRow
+												city={"Mexicali -D-V-5"}
+												name={"Ruben Castro Contreras"}
+												time={"6.06"}
+												place={"1ro."}
+											/>
+
+											<TableAthleticsRow
+												city={"Guaymas -D-V-95"}
+												name={"Juan Fernando Villa Diaz De Leon"}
+												time={"8.23"}
+												place={"2do."}
+											/>
+										</>
+									)}
+
+
 								</TableAthletics>
 							)}
 
-							{selectedCategory === 'Deportes de Exhibicion' && (
+							{selectedCategory === 'Deportes de Exhibición' && (
 								<>
 									<TableAthletics selectedCategory={"Impulso de Bala Femenil"}>
 										<TableAthleticsRow
