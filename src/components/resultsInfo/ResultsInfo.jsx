@@ -20,7 +20,7 @@ export const ResultsInfo = () => {
 	const [selectedDay, setSelectedDay] = useState('day1');
 	const [query, setQuery] = useState('');
 	const [selectedCategory, setSelectedCategory] = useState('Categoria');
-	const [distance, setDistance] = useState('');
+	const [distance, setDistance] = useState('Distancia');
 
 	const handleDayChange = (day) => {
 		setSelectedDay(day);
@@ -30,70 +30,122 @@ export const ResultsInfo = () => {
 		setSelectedCategory(category);
 
 		switch (category) {
-			case 'Jumbo (60 en adelante) Varonil':
-				setDistance('10000 MTS');
-				break;
-
-			case 'Master (40-49 años) Varonil':
-				setDistance('10000 MTS');
-				break;
-			
-			case 'Super-Master (50-59 años) Femenil':
-				setDistance('100 MTS');
-				break;
-				
-			case 'Super-Master (50-59 años) Varonil':
-				setDistance('100 MTS');
-				break;
-
-			case 'Master (40-49 años) Femenil':
-				setDistance('100 MTS');
-				break;
-
-			case 'Master (40-49 años) Varonil 100':
-				setDistance('100 MTS');
-				break;
-				
-			case 'Veterano (30-39 años) Femenil':
-				setDistance('100 MTS');
-				break;
-				
-			case 'Veterano (30-39 años) Varonil':
-				setDistance('100 MTS');
-				break;
-
-			case 'Libre (hasta 29 años) Femenil':
-				setDistance('100 MTS');
-				break;
-
-			case 'Libre (hasta 29 años) Varonil':
-				setDistance('100 MTS');
-				break;
-
-			case 'Jumbo (60 en adelante) Femenil':
-				setDistance('1500 MTS');
-				break;
-
-			case 'Super-Master (50-59 años) Femenil 1500':
-				setDistance('1500 MTS');
+			case 'Jumbo (60 en adelante) Varonil 400':
+				setDistance('400 MTS');
 				break;
 
 			case 'Jumbo (60 en adelante) Varonil 1500':
 				setDistance('1500 MTS');
 				break;
 
-			case 'Super-Master (50-59 años) Varonil 1500':
+			case 'Jumbo (60 en adelante) Varonil 5000':
+				setDistance('5000 MTS');
+				break;
+
+			case 'Jumbo (60 en adelante) Varonil 10000':
+				setDistance('10000 MTS');
+				break;
+
+			case 'Jumbo (60 en adelante) Femenil 400':
+				setDistance('400 MTS');
+				break;
+
+			case 'Jumbo (60 en adelante) Femenil 1500':
 				setDistance('1500 MTS');
+				break;
+
+			case 'Jumbo (60 en adelante) Femenil 5000':
+				setDistance('1500 MTS');
+				break;
+
+			case 'Libre (hasta 29 años) Femenil 100':
+				setDistance('100 MTS');
+				break;
+
+			case 'Libre (hasta 29 años) Varonil 100':
+				setDistance('100 MTS');
+				break;
+
+			case 'Libre (hasta 29 años) Varonil 400':
+				setDistance('400 MTS');
+				break;
+
+			case 'Master (40-49 años) Varonil 100':
+				setDistance('100 MTS');
+				break;
+
+			case 'Master (40-49 años) Varonil 400':
+				setDistance('400 MTS');
 				break;
 
 			case 'Master (40-49 años) Varonil 1500':
 				setDistance('1500 MTS');
 				break;
 
-			case 'Veterano (30-39 años) Varonil 1500':
+			case 'Master (40-49 años) Varonil 5000':
+				setDistance('5000 MTS');
+				break;
+
+			case 'Master (40-49 años) Femenil 100':
+				setDistance('100 MTS');
+				break;
+
+			case 'Master (40-49 años) Femenil 400':
+				setDistance('400 MTS');
+				break;
+
+			case 'Super-Master (50-59 años) Varonil 100':
+				setDistance('100 MTS');
+				break;
+
+			case 'Super-Master (50-59 años) Varonil 400':
+				setDistance('400 MTS');
+				break;
+
+			case 'Super-Master (50-59 años) Varonil 1500':
 				setDistance('1500 MTS');
 				break;
 
+			case 'Super-Master (50-59 años) Varonil 5000':
+				setDistance('5000 MTS');
+				break;
+
+			case 'Super-Master (50-59 años) Femenil 100':
+				setDistance('100 MTS');
+				break;
+
+			case 'Super-Master (50-59 años) Femenil 400':
+				setDistance('400 MTS');
+				break;
+
+			case 'Super-Master (50-59 años) Femenil 1500':
+				setDistance('1500 MTS');
+				break;
+
+			case 'Veterano (30-39 años) Varonil 100':
+				setDistance('100 MTS');
+				break;
+
+			case 'Veterano (30-39 años) Varonil 400':
+				setDistance('400 MTS');
+				break;
+			
+			case 'Veterano (30-39 años) Varonil 1500':
+				setDistance('1500 MTS');
+				break;
+				
+			case 'Veterano (30-39 años) Varonil 5000':
+				setDistance('5000 MTS');
+				break;
+
+			case 'Veterano (30-39 años) Femenil 100':
+				setDistance('100 MTS');
+				break;
+
+			case 'Veterano (30-39 años) Femenil 400':
+				setDistance('100 MTS');
+				break;
+				
 			default:
 				setDistance('');
 				break;
@@ -105,6 +157,7 @@ export const ResultsInfo = () => {
 		  <DaysMenu onDayChange={handleDayChange} />
   
 		  	<div className='results-container'>
+
 				{selectedDay === 'day1' && (
 					<ResultDay title={"Resultados - día 1"}>
 						<ResultDiscipline title={"Disciplina Softbol"}>
@@ -276,7 +329,6 @@ export const ResultsInfo = () => {
 								
 							</TableChess>
 						</ResultDiscipline>
-
 						
 						<ResultDiscipline title={"Disciplina atletismo"}>
 							<ComboAtletismo 
@@ -289,7 +341,7 @@ export const ResultsInfo = () => {
 							{selectedCategory !== 'Deportes de Exhibición' && (
 
 								<TableAthletics selectedCategory={selectedCategory} distance={distance}>
-									{selectedCategory === 'Jumbo (60 en adelante) Varonil' && (
+									{selectedCategory === 'Jumbo (60 en adelante) Varonil 10000' && (
 										<TableAthleticsRow
 											city={"Mexicali -D-V-5"}
 											name={"Fernando Avelar Martínez"}
@@ -298,7 +350,7 @@ export const ResultsInfo = () => {
 										/>
 									)}
 
-									{selectedCategory === 'Master (40-49 años) Varonil' && (
+									{selectedCategory === 'Master (40-49 años) Varonil 10000' && (
 										<TableAthleticsRow
 											city={"Mexicali -D-V-5"}
 											name={"Jesús Martín Valdez Duarte"}
@@ -307,7 +359,7 @@ export const ResultsInfo = () => {
 										/>
 									)}
 
-									{selectedCategory === 'Super-Master (50-59 años) Femenil' && (
+									{selectedCategory === 'Super-Master (50-59 años) Femenil 100' && (
 										<>
 											<TableAthleticsRow
 												city={"La Paz -D-V-7"}
@@ -332,7 +384,7 @@ export const ResultsInfo = () => {
 										</>
 									)}
 
-									{selectedCategory === 'Super-Master (50-59 años) Varonil' && (
+									{selectedCategory === 'Super-Master (50-59 años) Varonil 100' && (
 										<>
 											<TableAthleticsRow
 												city={"Ensenada -D-V-4"}
@@ -357,7 +409,7 @@ export const ResultsInfo = () => {
 										</>
 									)}
 
-									{selectedCategory === 'Master (40-49 años) Femenil' && (
+									{selectedCategory === 'Master (40-49 años) Femenil 100' && (
 										<>
 											<TableAthleticsRow
 												city={"Culiacan -D-V-92"}
@@ -407,7 +459,7 @@ export const ResultsInfo = () => {
 										</>
 									)}
 
-									{selectedCategory === 'Veterano (30-39 años) Femenil' && (
+									{selectedCategory === 'Veterano (30-39 años) Femenil 100' && (
 										<>
 											<TableAthleticsRow
 												city={"Mexicali -D-V-5"}
@@ -425,7 +477,7 @@ export const ResultsInfo = () => {
 										</>
 									)}
 
-									{selectedCategory === 'Veterano (30-39 años) Varonil' && (
+									{selectedCategory === 'Veterano (30-39 años) Varonil 100' && (
 										<>
 											<TableAthleticsRow
 												city={"La Paz -D-V-7"}
@@ -450,7 +502,7 @@ export const ResultsInfo = () => {
 										</>
 									)}
 
-									{selectedCategory === 'Libre (hasta 29 años) Femenil' && (
+									{selectedCategory === 'Libre (hasta 29 años) Femenil 100' && (
 										<>
 											<TableAthleticsRow
 												city={"La Paz -D-V-7"}
@@ -468,7 +520,7 @@ export const ResultsInfo = () => {
 										</>
 									)}
 
-									{selectedCategory === 'Libre (hasta 29 años) Varonil' && (
+									{selectedCategory === 'Libre (hasta 29 años) Varonil 100' && (
 										<>
 											<TableAthleticsRow
 												city={"Mexicali -D-V-5"}
@@ -486,7 +538,7 @@ export const ResultsInfo = () => {
 										</>
 									)}
 
-									{selectedCategory === 'Jumbo (60 en adelante) Femenil' && (
+									{selectedCategory === 'Jumbo (60 en adelante) Femenil 1500' && (
 										<>
 											<TableAthleticsRow
 												city={"Ensenada -D-V-4"}
@@ -769,352 +821,110 @@ export const ResultsInfo = () => {
 							{selectedCategory !== 'Deportes de Exhibición' && (
 
 								<TableAthletics selectedCategory={selectedCategory} distance={distance}>
-									{selectedCategory === 'Jumbo (60 en adelante) Varonil' && (
+									{selectedCategory === 'Jumbo (60 en adelante) Femenil 5000' && (
 										<TableAthleticsRow
-											city={"Mexicali -D-V-5"}
-											name={"Fernando Avelar Martínez"}
-											time={"01:07:40"}
+											city={"Ensenada -D-V-4"}
+											name={"Ma Gloria Rodríguez Rodríguez"}
+											time={"27.09"}
 											place={"1ro."}
 										/>
 									)}
 
-									{selectedCategory === 'Master (40-49 años) Varonil' && (
+									{selectedCategory === 'Jumbo (60 en adelante) Varonil 5000' && (
 										<TableAthleticsRow
-											city={"Mexicali -D-V-5"}
-											name={"Jesús Martín Valdez Duarte"}
-											time={"01:07:40"}
+											city={"Huatabampo -D-V-98"}
+											name={"Ramón Saúl Lugo Guerra"}
+											time={"48.01"}
 											place={"1ro."}
 										/>
 									)}
 
-									{selectedCategory === 'Super-Master (50-59 años) Femenil' && (
+									{selectedCategory === 'Super-Master (50-59 años) Varonil 5000' && (
 										<>
 											<TableAthleticsRow
-												city={"La Paz -D-V-7"}
-												name={"Luscely Gomez Herrara"}
-												time={"18.75"}
+												city={"Nogales -D-V-99"}
+												name={"Alberto Valenzuela Valdez"}
+												time={"28.47"}
 												place={"1ro."}
 											/>
 
 											<TableAthleticsRow
-												city={"Hermosillo -D-V-97"}
-												name={"Alma Catalina Gamez Meza"}
-												time={"20.41"}
+												city={"Agua Prieta -D-V-96"}
+												name={"Francisco Javier Rivera Medinilla"}
+												time={"33.34"}
 												place={"2do."}
-											/>
-
-											<TableAthleticsRow
-												city={"Nogales -D-V-99"}
-												name={"Maribel Herrera Velarde"}
-												time={"24.28"}
-												place={"3ro."}
 											/>
 										</>
 									)}
 
-									{selectedCategory === 'Super-Master (50-59 años) Varonil' && (
+									{selectedCategory === 'Master (40-49 años) Varonil 5000' && (
 										<>
 											<TableAthleticsRow
 												city={"Ensenada -D-V-4"}
-												name={"Martín Franco Jaramillo"}
-												time={"14.28"}
+												name={"Juán Pablo Vite Frías"}
+												time={"18.49"}
 												place={"1ro."}
-											/>
-
-											<TableAthleticsRow
-												city={"Nogales -D-V-99"}
-												name={"Joel Hirales Rochin"}
-												time={"15.88"}
-												place={"2do."}
-											/>
-
-											<TableAthleticsRow
-												city={"Huatabampo -D-V-98"}
-												name={"Damian Alberto Valdez Morales"}
-												time={"16.81"}
-												place={"3ro."}
 											/>
 										</>
 									)}
 
-									{selectedCategory === 'Master (40-49 años) Femenil' && (
-										<>
-											<TableAthleticsRow
-												city={"Culiacan -D-V-92"}
-												name={"Rosa Ana Sanchez Fletes Meraz"}
-												time={"18.10"}
-												place={"1ro."}
-											/>
-
-											<TableAthleticsRow
-												city={"Nogales -D-V-99"}
-												name={"Guadalupe Irasema Parra Arriola"}
-												time={"18.48"}
-												place={"2do."}
-											/>
-
-											<TableAthleticsRow
-												city={"Huatabampo -D-V-98"}
-												name={"Maria Antonia Armenta Nieblas"}
-												time={"21.26"}
-												place={"3ro."}
-											/>
-										</>
-									)}
-
-									{selectedCategory === 'Master (40-49 años) Varonil 100' && (
-										<>
-											<TableAthleticsRow
-												city={"Nogales -D-V-99"}
-												name={"Sergio Alfredo Araujo Duran"}
-												time={"14.66"}
-												place={"1ro."}
-											/>
-
-											<TableAthleticsRow
-												city={"Mexicali -D-V-5"}
-												name={"José Alfredo Montaño Avila"}
-												time={"14.90"}
-												place={"2do."}
-											/>
-
-											<TableAthleticsRow
-												city={"Ensenada -D-V-4"}
-												name={"Oscar Martín Tirado Ochoa"}
-												time={"15.60"}
-												place={"3ro."}
-											/>
-										</>
-									)}
-
-									{selectedCategory === 'Veterano (30-39 años) Femenil' && (
-										<>
-											<TableAthleticsRow
-												city={"Mexicali -D-V-5"}
-												name={"Marisol Arevalos Sánchez"}
-												time={"15.35"}
-												place={"1ro."}
-											/>
-
-											<TableAthleticsRow
-												city={"Mexicali -D-V-5"}
-												name={"Liliana Sánchez Ortega"}
-												time={"17.79"}
-												place={"2do."}
-											/>
-										</>
-									)}
-
-									{selectedCategory === 'Veterano (30-39 años) Varonil' && (
-										<>
-											<TableAthleticsRow
-												city={"La Paz -D-V-7"}
-												name={"David Antonio Ibarra Angulo"}
-												time={"12.26"}
-												place={"1ro."}
-											/>
-
-											<TableAthleticsRow
-												city={"La Paz -D-V-7"}
-												name={"Ruben Aramis Larios Ramírez"}
-												time={"13.83"}
-												place={"2do."}
-											/>
-
-											<TableAthleticsRow
-												city={"Hermosillo -D-V-97"}
-												name={"Roman Alberto Zayas Castillo"}
-												time={"17.58"}
-												place={"3ro."}
-											/>
-										</>
-									)}
-
-									{selectedCategory === 'Libre (hasta 29 años) Femenil' && (
-										<>
-											<TableAthleticsRow
-												city={"La Paz -D-V-7"}
-												name={"Andrea Lisset Salazar Rodarte"}
-												time={"14.13"}
-												place={"1ro."}
-											/>
-
-											<TableAthleticsRow
-												city={"Mexicali -D-V-5"}
-												name={"Karen Yaneli Cardozo Cano"}
-												time={"18.72"}
-												place={"2do."}
-											/>
-										</>
-									)}
-
-									{selectedCategory === 'Libre (hasta 29 años) Varonil' && (
-										<>
-											<TableAthleticsRow
-												city={"Mexicali -D-V-5"}
-												name={"Hernan Iván Hernández Martínez"}
-												time={"15.40"}
-												place={"1ro."}
-											/>
-
-											<TableAthleticsRow
-												city={"Nogales -D-V-99"}
-												name={"Jonathan Eric García Múñoz"}
-												time={"17.30"}
-												place={"2do."}
-											/>
-										</>
-									)}
-
-									{selectedCategory === 'Jumbo (60 en adelante) Femenil' && (
-										<>
-											<TableAthleticsRow
-												city={"Ensenada -D-V-4"}
-												name={"Ma Gloria Rodríguez Rodríguez"}
-												time={"7.10"}
-												place={"1ro."}
-											/>
-
-											<TableAthleticsRow
-												city={"La Paz -D-V-7"}
-												name={"Virginia Ilescas Vela"}
-												time={"8.00"}
-												place={"2do."}
-											/>
-										</>
-									)}
-
-									{selectedCategory === 'Super-Master (50-59 años) Femenil 1500' && (
+									{selectedCategory === 'Veterano (30-39 años) Varonil 5000' && (
 										<>
 											<TableAthleticsRow
 												city={"Hermosillo -D-V-97"}
-												name={"Leticia Echagaray"}
-												time={"9.21"}
-												place={"1ro."}
-											/>
-
-											<TableAthleticsRow
-												city={"Hermosillo -D-V-97"}
-												name={"Maria Luisa Valadez"}
-												time={"10.36"}
-												place={"2do."}
-											/>
-										</>
-									)}
-
-									{selectedCategory === 'Jumbo (60 en adelante) Varonil 1500' && (
-										<>
-											<TableAthleticsRow
-												city={"Ensenada -D-V-4"}
-												name={"Rodolfo Acosta Ojeda"}
-												time={"6.23"}
-												place={"1ro."}
-											/>
-
-											<TableAthleticsRow
-												city={"Huatabampo -D-V-98"}
-												name={"Ramón Saul Lugo Guerra"}
-												time={"12.54"}
-												place={"2do."}
-											/>
-										</>
-									)}
-
-									{selectedCategory === 'Super-Master (50-59 años) Varonil 1500' && (
-										<>
-											<TableAthleticsRow
-												city={"Huatabampo -D-V-98"}
-												name={"Arnulfo Ibarra Camargo"}
-												time={"5.51"}
+												name={"Román Alberto Zayas Castillo"}
+												time={"32.06"}
 												place={"1ro."}
 											/>
 										</>
 									)}
-
-									{selectedCategory === 'Master (40-49 años) Varonil 1500' && (
-										<>
-											<TableAthleticsRow
-												city={"Ensenada -D-V-4"}
-												name={"Juan Pablo Vite Frías"}
-												time={"4.59"}
-												place={"1ro."}
-											/>
-
-											<TableAthleticsRow
-												city={"Mexicali -D-V-5"}
-												name={"Heriberto Montoya González"}
-												time={"9.10"}
-												place={"2do."}
-											/>
-										</>
-									)}
-
-									{selectedCategory === 'Veterano (30-39 años) Varonil 1500' && (
-										<>
-											<TableAthleticsRow
-												city={"Mexicali -D-V-5"}
-												name={"Ruben Castro Contreras"}
-												time={"6.06"}
-												place={"1ro."}
-											/>
-
-											<TableAthleticsRow
-												city={"Guaymas -D-V-95"}
-												name={"Juan Fernando Villa Diaz De Leon"}
-												time={"8.23"}
-												place={"2do."}
-											/>
-										</>
-									)}
-
-
 								</TableAthletics>
 							)}
 
 							{selectedCategory === 'Deportes de Exhibición' && (
 								<>
-									<TableAthletics selectedCategory={"Impulso de Bala Femenil"}>
+									<TableAthletics selectedCategory={"Lanzamiento de Disco Femenil"}>
 										<TableAthleticsRow
 											city={"Tijuana -D-V-6"}
 											name={"Hilda Estrada Manzo"}
-											time={"5.36"}
+											time={"16.43"}
 											place={"1ro."}
 										/>
 
 										<TableAthleticsRow
-											city={"Mexicali -D-V-5"}
-											name={"María Concepcin López Gerardo"}
-											time={"5.20"}
+											city={"Hermosillo -D-V-97"}
+											name={"Isela Guadalupe Medina I."}
+											time={"16.36"}
 											place={"2do."}
 										/>
 
 										<TableAthleticsRow
 											city={"Hermosillo -D-V-97"}
-											name={"Fernanda Godinez Almaraz"}
-											time={"5.04"}
+											name={"Luz Marina Galaz"}
+											time={"12.20"}
 											place={"3ro."}
 										/>
 									</TableAthletics>
 
-									<TableAthletics selectedCategory={"Impulso de Bala Varonil"}>
+									<TableAthletics selectedCategory={"Lanzamiento de Disco Varonil"}>
 										<TableAthleticsRow
 											city={"Agua Prieta -D-V-96"}
 											name={"Lamberto Vazquez Veloz"}
-											time={"9.43"}
+											time={"21.69"}
 											place={"1ro."}
 										/>
 
 										<TableAthleticsRow
 											city={"Hermosillo -D-V-97"}
-											name={"Michael Figueroa"}
-											time={"8.67"}
+											name={"Román Alberto Zayas Castillo"}
+											time={"19.47"}
 											place={"2do."}
 										/>
 
 										<TableAthleticsRow
 											city={"Hermosillo -D-V-97"}
-											name={"Jorge Castellanos"}
-											time={"8.63"}
+											name={"Iván Castellanos"}
+											time={"19.10"}
 											place={"3ro."}
 										/>
 									</TableAthletics>
