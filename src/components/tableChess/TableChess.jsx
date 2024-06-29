@@ -3,8 +3,8 @@ import './tableChess.css'
 
 export const TableChess = ({ children }) => {
   return (
-	<div className='table-container'>
-        <div className='encabezado-grid'>
+	<div className='table-chess-container'>
+        <div className='encabezado-chess-grid'>
             <div>Tablero</div>
             <div>Delegación</div>
             <div>Jugador Blancas</div>
