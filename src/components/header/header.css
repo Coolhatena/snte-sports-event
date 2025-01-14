@@ -62,12 +62,14 @@
 	text-align: center;
 	height: fit-content;
 	width: fit-content;
+	text-decoration: none;
 }
 
 .button:hover, .button:active {
 	background-color: #305eaa;
 	border-radius: 0.5rem;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
